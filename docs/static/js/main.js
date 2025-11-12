@@ -11,6 +11,12 @@ let USE_BACKEND = false
 // ฐานข้อมูลคำคมเมื่อทำงานแบบ static
 let QUOTES_DB = null  // รูปแบบ { [category: string]: Array<Quote> }
 
+/* ------------------ กันซ้ำ (Front-end) ------------------ */
+/** deckMap: สำรับไพ่ต่อหมวด (index ของ quote) ใช้เฉพาะโหมด static */
+const deckMap = Object.create(null)
+/** lastKeyMap: key ของ quote ที่แสดงล่าสุดต่อหมวด (กัน "ซ้ำทันที") */
+const lastKeyMap = Object.create(null)
+
 /* ------------------ utils: path & normalize ------------------ */
 function rel(url) {
   // ใช้พาธ relative เสมอ เพื่อให้ทำงานได้บน GitHub Pages
@@ -31,6 +37,11 @@ function normalizeQuote(q) {
   const work = (q.work ?? q.source ?? '').toString()
   const ref  = (q.ref ?? q.link ?? q.url ?? '').toString()
   return { en, th, author, year, info, work, ref }
+}
+
+function getQuoteKey(q) {
+  // คีย์ง่าย ๆ ใช้กันซ้ำทันทีในหมวดเดียวกัน
+  return [q.en, q.author, q.year].join('||')
 }
 
 /* ------------------ load categories ------------------ */
@@ -55,7 +66,6 @@ async function fetchCategories() {
   QUOTES_DB = db
   categories = Object.keys(db).sort()
   if (categories.length === 0) {
-    // กรณีพิเศษมาก ๆ
     categories = ['All']
     QUOTES_DB = { All: [] }
   }
@@ -168,16 +178,52 @@ function waitForTransition(el) {
   })
 }
 
-/* ------------------ pick random (static) ------------------ */
+/* ------------------ deck (static) + pick ------------------ */
+function shuffleInPlace(arr){
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+  }
+  return arr
+}
+function ensureDeck(cat, poolLen){
+  let deck = deckMap[cat]
+  if (!Array.isArray(deck) || deck.length === 0) {
+    deck = Array.from({length: poolLen}, (_, i) => i)
+    shuffleInPlace(deck)
+    deckMap[cat] = deck
+  }
+  return deck
+}
+
+/** pickRandomLocal: ปรับให้ใช้สำรับไพ่ + กันซ้ำทันที */
 function pickRandomLocal(cat) {
   if (!QUOTES_DB) return null
   const pool = QUOTES_DB[cat] && QUOTES_DB[cat].length
     ? QUOTES_DB[cat]
     : Object.values(QUOTES_DB).flat()
 
-  if (!pool.length) return null
-  const idx = Math.floor(Math.random() * pool.length)
-  return pool[idx]
+  const n = pool.length
+  if (!n) return null
+
+  let deck = ensureDeck(cat, n)
+  // จั่วใบแรก
+  let idx = deck.shift()
+
+  // กัน "ซ้ำทันที" ถ้ามีมากกว่า 1
+  if (n > 1) {
+    const lastKey = lastKeyMap[cat]
+    const firstKey = getQuoteKey(pool[idx])
+    if (firstKey === lastKey && deck.length > 0) {
+      const alt = deck.shift()
+      deck.push(idx)     // ใบแรกที่ซ้ำทันทีเอาไปไว้ท้ายสำรับ
+      idx = alt
+    }
+  }
+  deckMap[cat] = deck
+  const chosen = pool[idx]
+  lastKeyMap[cat] = getQuoteKey(chosen)
+  return chosen
 }
 
 /* ------------------ main ------------------ */
@@ -203,14 +249,35 @@ async function getRandomQuote() {
     void lines.offsetWidth
 
     let data = null
+
     if (USE_BACKEND) {
+      // ดึงจาก backend + กัน "ซ้ำทันที" 1 ครั้งเผื่อกรณีขอบ ๆ
       const url = activeCat ? `api/random?cat=${encodeURIComponent(activeCat)}` : 'api/random'
-      const fetchPromise = fetch(rel(url), { cache: 'no-store', signal: inflightCtrl.signal })
+      // request แรก
+      let d = await fetch(rel(url), { cache: 'no-store', signal: inflightCtrl.signal })
         .then(r => { if (!r.ok) throw new Error('Network error'); return r.json() })
-      const [d] = await Promise.all([fetchPromise, waitForTransition(lines)])
-      data = d
+
+      // ถ้าดันไปซ้ำทันที ลองใหม่อีก 1 ครั้ง
+      let q1 = normalizeQuote(d)
+      const lastKey = lastKeyMap[activeCat]
+      if (lastKey && getQuoteKey(q1) === lastKey) {
+        try {
+          const d2 = await fetch(rel(url), { cache: 'no-store', signal: inflightCtrl.signal })
+            .then(r => { if (!r.ok) throw new Error('Network error'); return r.json() })
+          const q2 = normalizeQuote(d2)
+          if (getQuoteKey(q2) !== lastKey) {
+            d = d2
+            q1 = q2
+          }
+        } catch(_) { /* ถ้าล้มเหลวก็ใช้ตัวแรกไป */ }
+      }
+
+      await waitForTransition(lines)
+      data = q1
+      lastKeyMap[activeCat] = getQuoteKey(data)
+
     } else {
-      // static mode
+      // static mode: ใช้สำรับไพ่
       await waitForTransition(lines)
       const q = pickRandomLocal(activeCat)
       if (!q) throw new Error('No quote found in local DB')
@@ -219,7 +286,7 @@ async function getRandomQuote() {
 
     currentQuote = data = normalizeQuote(data)
 
-    // update content (รองรับ en/th หรือ text เดิม)
+    // update content
     setText('quote-en', data.en ? '“' + data.en.trim() + '”' : '')
     setText('quote-th', (data.th || '').trim())
     setText('quote-credit', data.author ? `— ${data.author}${data.year ? ' ('+data.year+')' : ''}` : '')
