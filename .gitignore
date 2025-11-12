@@ -1,0 +1,19 @@
+# Python / Flask (dev)
+.venv/
+venv/
+__pycache__/
+*.pyc
+instance/
+.env
+
+# Editors
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Build caches
+dist/
+build/

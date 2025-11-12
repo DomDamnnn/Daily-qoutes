@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daily quotes</title>
+
+  <!-- ตั้งธีมก่อนโหลด CSS เพื่อกันแฟลช -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('dq_theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="./static/css/styles.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <div class="brand"></div>
+
+      <!-- ปุ่มสลับธีม (ไอคอน 🌙/☀️ แสดงอัตโนมัติ) -->
+      <button id="theme-toggle" class="theme-toggle"
+              aria-label="สลับเป็นโหมดมืด" title="สลับเป็นโหมดมืด" aria-pressed="false">
+        <span class="sr-only">สลับโหมด</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Daily quotes</h1>
+      <p class="tagline">
+        ถ้อยคำดี ๆ เพื่อความพัฒนาและก้าวหน้าในชีวิต สำหรับผู้ที่ใฝ่ความรู้และแรงบันดาลใจอย่างไม่สิ้นสุด
+      </p>
+    </header>
+
+    <!-- แท็บหมวดหมู่ (เติมด้วย JS จาก /api/categories) -->
+    <nav class="tabs" id="tabs" aria-label="หมวดหมู่คำคม"></nav>
+
+    <section class="quote-card" id="quote-card">
+      <div class="quote-lines" id="quote-lines">
+        <blockquote id="quote-en">เลือกหมวดด้านบน แล้วกด “สุ่มคำคม”</blockquote>
+        <p class="quote-th" id="quote-th">—</p>
+      </div>
+
+      <div class="quote-meta">
+        <button id="btn-more" class="info-btn" disabled>ℹ ข้อมูลเพิ่มเติม</button>
+        <cite id="quote-credit"></cite>
+      </div>
+
+      <div class="actions">
+        <button id="btn-random" disabled>สุ่มคำคม</button>
+        <button id="btn-copy" disabled>คัดลอก</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- แผงขยายความ (Bottom Sheet) -->
+  <div id="more-panel" class="more-panel" role="dialog" aria-modal="true" aria-labelledby="more-title">
+    <div class="more-sheet">
+      <h2 id="more-title" class="sr-only">ข้อมูลเพิ่มเติม</h2>
+      <button id="close-more" class="more-close" aria-label="ปิด">✕</button>
+
+      <p class="more-work" id="more-work"></p>
+      <p class="more-info" id="more-info"></p>
+      <p class="more-ref"  id="more-ref"></p>
+    </div>
+  </div>
+
+  <script src="./static/js/main.js"></script>
+</body>
+</html>
