@@ -1,12 +1,13 @@
-{
+
+  {
   "ความกล้าหาญ": [
     {
       "en": "The only thing we have to fear is fear itself.",
-      "th": "สิ่งเดียวที่เราควรกลัว คือ ‘ความกลัว’ เอง",
+      "th": "สิ่งเดียวที่เราควรกลัว คือ ความกลัว เอง",
       "author": "Franklin D. Roosevelt",
       "year": "1933",
       "work": "First Inaugural Address",
-      "info": "คำกล่าวเปิดสมัยมหาวิกฤตเศรษฐกิจ (Great Depression) ที่ชี้ว่า ‘ความตื่นตระหนกไร้เหตุผล’ คือศัตรูตัวจริง—เป้าคือเรียกสติสาธารณะเพื่อเดินหน้ามาตรการฟื้นเศรษฐกิจร่วมกัน ไม่ใช่ปฏิเสธความกลัว แต่ยอมรับแล้วจัดการมันอย่างมีระบบ.",
+      "info": "คำกล่าวเปิดสมัยมหาวิกฤตเศรษฐกิจ (Great Depression) ที่ชี้ว่า ‘ความตื่นตระหนกไร้เหตุผล’ คือศัตรูตัวจริง—ยอมรับความกลัวแล้วเดินหน้าจัดการร่วมกันอย่างมีสติ",
       "ref": "https://avalon.law.yale.edu/20th_century/froos1.asp"
     },
     {
@@ -15,7 +16,7 @@
       "author": "Seneca",
       "year": "c. 65",
       "work": "Moral Letters to Lucilius, Letter 78",
-      "info": "เซเนกาพูดถึงการเจ็บป่วยและความเปราะบาง—ความกล้าหาญไม่จำเป็นต้องเอิกเกริก การยืนหยัดดูแลตนเองในวันที่ยากก็คือความกล้าหาญเชิงสติ (Stoic) แล้ว.",
+      "info": "สโตอิกชี้ว่า ‘ความกล้า’ ไม่จำเป็นต้องเอิกเกริก—การยืนหยัดดูแลตัวเองในวันที่ยาก ก็นับเป็นความกล้าหาญ",
       "ref": "https://www.loebclassics.com/view/seneca_younger-epistles/1917/pb_LCL076.247.xml"
     },
     {
@@ -24,38 +25,137 @@
       "author": "Virgil",
       "year": "19 BCE",
       "work": "Aeneid (10.284)",
-      "info": "ละตินดั้งเดิม “audentis Fortuna iuvat”—คำปลุกใจของทูร์นัสก่อนเข้าสู้รบ สื่อว่าจังหวะการตัดสินใจและความกล้าพอดี ๆ ในยามเหมาะสมเป็นตัวเสี่ยงที่คุ้ม.",
+      "info": "วลีละติน “audentis Fortuna iuvat”—ปลุกใจให้ตัดสินใจลงมือเมื่อจังหวะเหมาะ ไม่ใช่บุ่มบ่าม แต่กล้าอย่างมีสติ",
       "ref": "https://www.thelatinlibrary.com/vergil/aen10.shtml"
+    },
+    {
+      "en": "Courage is resistance to fear, mastery of fear — not absence of it.",
+      "th": "ความกล้าหาญคือการต้านและควบคุมความกลัว ไม่ใช่การไร้ความกลัว",
+      "author": "Mark Twain",
+      "year": "1894",
+      "work": "Pudd’nhead Wilson’s Calendar (Ch. XII)",
+      "info": "ทเวนย้ำว่าคนกล้า ‘รู้สึกกลัวได้’ แต่เลือกยืนหยัดและกำกับมัน—นี่แหละแก่นของความกล้า",
+      "ref": "https://www.gutenberg.org/files/102/102-h/102-h.htm"
+    },
+    {
+      "en": "To see what is right and not to do it is want of courage.",
+      "th": "เห็นสิ่งที่ถูกแต่ไม่ทำ คือความขาดความกล้า",
+      "author": "Confucius",
+      "year": "5th cent. BCE",
+      "work": "Analects 2.24",
+      "info": "ขงจื่อวัด ‘ความกล้า’ ที่การลงมือทำสิ่งถูกต้อง—ไม่ใช่แค่รู้แล้วนิ่งเฉย",
+      "ref": "https://www.acmuller.net/con-dao/analects.html"
+    },
+    {
+      "en": "Courage is a mean with respect to fear and confidence.",
+      "th": "ความกล้าหาญเป็นภาวะกึ่งกลาง ระหว่างความกลัวกับความอวดดี",
+      "author": "Aristotle",
+      "year": "4th cent. BCE",
+      "work": "Nicomachean Ethics III",
+      "info": "อริสโตเติลนิยามความกล้าแบบ ‘สายกลาง’—ไม่ขลาดจนถอย ไม่บ้าบิ่นจนพัง",
+      "ref": "https://nothingistic.org/library/aristotle/nicomachean/ethics03.html"
+    },
+    {
+      "en": "Cowards die many times before their deaths; The valiant never taste of death but once.",
+      "th": "คนขลาดตายหลายครั้งก่อนตายจริง; ผู้กล้าลิ้มรสความตายเพียงครั้งเดียว",
+      "author": "William Shakespeare",
+      "year": "1599",
+      "work": "Julius Caesar, Act 2, Scene 2",
+      "info": "ซีซาร์เตือนว่าอย่าให้ความกลัว ‘ฆ่าเรา’ ซ้ำ ๆ—สุดท้ายความตายก็มาถึงหนึ่งครั้งเท่านั้น",
+      "ref": "https://www.folger.edu/explore/shakespeares-works/julius-caesar/read/2/2/"
     }
   ],
   "การเติบโต": [
-    {
-      "en": "A journey of a thousand miles begins with a single step.",
-      "th": "การเดินทางพันลี้ เริ่มต้นด้วยก้าวเดียว",
-      "author": "Lao Tzu",
-      "year": "4–3 BCE (trad.)",
-      "work": "Tao Te Ching, ch. 64",
-      "info": "ต้นฉบับว่ากันตรง ๆ ว่า “เริ่มจากใต้เท้า”—เน้นการ ‘ป้องกันก่อนเกิด’ และ ‘เริ่มเล็กให้จริง’ มากกว่าการรอแผนเพอร์เฟกต์ และมักถูกอ้างผิดไปหาขงจื่อด้วย.",
-      "ref": "https://taoism.net/tao-te-ching-chapter-64/"
-    },
-    {
-      "en": "While we are postponing, life speeds by.",
-      "th": "ขณะที่เราผัดวันพรุ่งนี้ ชีวิตก็กำลังผ่านพ้นไป",
-      "author": "Seneca",
-      "year": "c. 62",
-      "work": "On the Shortness of Life",
-      "info": "เดิมภาษาละติน ‘dum differtur, vita transcurrit’—สารคือเวลาสั้นเพราะเรา ‘ปล่อย’ ไม่ใช่เพราะมันน้อย แก้ได้ด้วยการจัดลำดับสิ่งที่สำคัญจริง ๆ.",
-      "ref": "https://en.wikisource.org/wiki/Of_the_Shortness_of_Life"
-    },
-    {
-      "en": "Waste no more time arguing what a good man should be. Be one.",
-      "th": "อย่าเสียเวลาเถียงว่าคนดีควรเป็นอย่างไร—จงเป็นคนนั้นเสียเอง",
-      "author": "Marcus Aurelius",
-      "year": "c. 170–180",
-      "work": "Meditations 10.16",
-      "info": "เตือนให้วาง ‘คำอธิบายคุณธรรม’ แล้วโยกพลังไปสู่ ‘การปฏิบัติคุณธรรม’ ในชีวิตประจำวัน—แปลงทฤษฎีเป็นกิจวัตรเล็ก ๆ.",
-      "ref": "https://archive.org/details/meditationsmarcusaurelius"
-    }
+  {
+    "en": "A journey of a thousand miles begins with a single step.",
+    "th": "การเดินทางพันลี้ เริ่มต้นด้วยก้าวเดียว",
+    "author": "Lao Tzu",
+    "year": "4–3 BCE (trad.)",
+    "work": "Tao Te Ching, ch. 64",
+    "info": "ต้นฉบับเน้นการเริ่มจาก ‘ใต้เท้า’—ให้ลงมือจริงเล็ก ๆ แต่ต่อเนื่อง แทนการรอแผนเพอร์เฟกต์",
+    "ref": "https://taoism.net/tao-te-ching-chapter-64/"
+  },
+  {
+    "en": "While we are postponing, life speeds by.",
+    "th": "ขณะที่เราผัดวันพรุ่งนี้ ชีวิตก็กำลังผ่านพ้นไป",
+    "author": "Seneca",
+    "year": "c. 62",
+    "work": "On the Shortness of Life",
+    "info": "ไม่ใช่เวลา ‘น้อย’ แต่เรา ‘ปล่อย’ ให้หาย—แก้ด้วยการจัดลำดับสิ่งสำคัญและเริ่มวันนี้",
+    "ref": "https://en.wikisource.org/wiki/Of_the_Shortness_of_Life"
+  },
+  {
+    "en": "Waste no more time arguing what a good man should be. Be one.",
+    "th": "อย่าเสียเวลาเถียงว่าคนดีควรเป็นอย่างไร—จงเป็นคนนั้นเสียเอง",
+    "author": "Marcus Aurelius",
+    "year": "c. 170–180",
+    "work": "Meditations 10.16",
+    "info": "เลิกถกเชิงทฤษฎี แล้วย้ายพลังไปที่การปฏิบัติคุณธรรมในกิจวัตรประจำวัน",
+    "ref": "https://archive.org/details/meditationsmarcusaurelius"
+  },
+  {
+    "en": "The beginning is the most important part of the work.",
+    "th": "การเริ่มต้นคือส่วนสำคัญที่สุดของงาน",
+    "author": "Plato",
+    "year": "c. 375 BCE",
+    "work": "Republic 377a",
+    "info": "เพลโตชี้ว่า ‘ต้นทาง’ จะกำหนดทิศของทั้งระบบ—วางฐานให้ถูกตั้งแต่แรก งานที่เหลือจะราบรื่น",
+    "ref": "https://www.platonicfoundation.org/republic-377b/"
+  },
+  {
+    "en": "No great thing is created suddenly.",
+    "th": "ไม่มีสิ่งยิ่งใหญ่ใดถูกสร้างขึ้นได้ในพริบตา",
+    "author": "Epictetus",
+    "year": "c. 108",
+    "work": "Discourses 1.15",
+    "info": "การเติบโตใหญ่ ๆ ต้องเวลาและความสม่ำเสมอ—เหมือนกล้ามเนื้อ ต้องซ้อมเล็ก ๆ ซ้ำ ๆ",
+    "ref": "https://standardebooks.org/ebooks/epictetus/discourses/george-long/text/book-1"
+  },
+  {
+    "en": "To live is to change, and to be perfect is to have changed often.",
+    "th": "การมีชีวิตคือการเปลี่ยนแปลง และความสมบูรณ์คือการกล้าเปลี่ยนบ่อยครั้ง",
+    "author": "John Henry Newman",
+    "year": "1845",
+    "work": "An Essay on the Development of Christian Doctrine",
+    "info": "นิวแมนสรุปใจความว่า ‘การพัฒนา = การเปลี่ยนแปลงอย่างมีทิศทาง’—ยอมรับการปรับตัวเป็นสัญญาณของความก้าวหน้า",
+    "ref": "https://www.newmanreader.org/works/development/chapter1.html"
+  },
+  {
+    "en": "If I have seen further it is by standing on the shoulders of Giants.",
+    "th": "หากฉันมองไปได้ไกล ก็เพราะยืนอยู่บนบ่าของยักษ์ใหญ่",
+    "author": "Isaac Newton",
+    "year": "1675",
+    "work": "Letter to Robert Hooke (5 Feb 1675/6)",
+    "info": "ภาพคิดเรื่องการต่อยอด—เติบโตได้เร็วเมื่อรู้จักเรียนจากผลงานของคนก่อนหน้า",
+    "ref": "https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00258"
+  },
+  {
+    "en": "Dripping water hollows stone.",
+    "th": "หยดน้ำซ้ำ ๆ เจาะหินได้",
+    "author": "Ovid",
+    "year": "c. 13 CE",
+    "work": "Epistulae ex Ponto 3.10.5–6",
+    "info": "โอวิดย้ำพลังของความเพียร—งานยากแตกออกได้ด้วยแรงเล็ก ๆ แต่ไม่หยุดยั้ง",
+    "ref": "https://www.perseus.tufts.edu/hopper/text?doc=Ov.%20Pont.%203.10.5-6"
+  },
+  {
+    "en": "He who has begun is half done; dare to be wise.",
+    "th": "เริ่มแล้วเท่ากับเสร็จไปครึ่ง—จงกล้าฉลาด",
+    "author": "Horace",
+    "year": "20 BCE",
+    "work": "Epistles 1.2.40 (Dimidium facti qui coepit habet; sapere aude)",
+    "info": "ฮอราซบอกให้ ‘เริ่มเดี๋ยวนี้’—การเริ่มคือแรงเฉื่อยก้อนใหญ่สุดของงานทั้งหมด",
+    "ref": "https://www.perseus.tufts.edu/hopper/text?doc=Hor.%20Ep.%201.2.40"
+  },
+  {
+    "en": "Loss is nothing else but change, and change is Nature’s delight.",
+    "th": "การสูญเสียคือความเปลี่ยนแปลง และความเปลี่ยนแปลงคือความชื่นชมของธรรมชาติ",
+    "author": "Marcus Aurelius",
+    "year": "c. 170–180",
+    "work": "Meditations 12.36",
+    "info": "ปรับกรอบคิดต่อ ‘ความสูญเสีย’ ให้กลายเป็นพื้นที่เรียนรู้—เปลี่ยนคือสภาวะปกติของชีวิต",
+    "ref": "https://lexundria.com/m_aur_med/12.36/pr?notes=none"
+  }
   ],
   "มิตรภาพ": [
     {
