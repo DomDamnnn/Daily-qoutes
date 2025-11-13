@@ -4,22 +4,19 @@ let activeCat = null
 let categories = []
 let isSwitchingCategory = false
 let currentQuote = null
-let inflightCtrl = null   // กัน request ค้างถ้ากดรัว
+let inflightCtrl = null
 
-// โหมดใช้งาน: ถ้ามี Backend จะเป็น true, ถ้าไม่มีจะใช้ quotes.json (static)
+// backend on/off (auto-detect)
 let USE_BACKEND = false
-// ฐานข้อมูลคำคมเมื่อทำงานแบบ static
-let QUOTES_DB = null  // รูปแบบ { [category: string]: Array<Quote> }
+// { [category: string]: Quote[] } when static
+let QUOTES_DB = null
 
-/* ------------------ กันซ้ำ (Front-end) ------------------ */
-/** deckMap: สำรับไพ่ต่อหมวด (index ของ quote) ใช้เฉพาะโหมด static */
-const deckMap = Object.create(null)
-/** lastKeyMap: key ของ quote ที่แสดงล่าสุดต่อหมวด (กัน "ซ้ำทันที") */
-const lastKeyMap = Object.create(null)
+// no-repeat helpers (static mode)
+const deckMap = Object.create(null)   // category -> shuffled index queue
+const lastKeyMap = Object.create(null) // category -> last shown key
 
-/* ------------------ utils: path & normalize ------------------ */
+// ---------- utils ----------
 function rel(url) {
-  // ใช้พาธ relative เสมอ เพื่อให้ทำงานได้บน GitHub Pages
   if (url.startsWith('/')) url = url.slice(1)
   if (!url.startsWith('./') && !url.startsWith('http') && !url.startsWith('api/')) {
     url = './' + url
@@ -28,7 +25,6 @@ function rel(url) {
 }
 
 function normalizeQuote(q) {
-  // รองรับคีย์ที่ต่างกัน เพื่อความทนทาน
   const en = (q.en ?? q.text ?? q.quote ?? '').toString()
   const th = (q.th ?? '').toString()
   const author = (q.author ?? q.by ?? '').toString()
@@ -40,14 +36,12 @@ function normalizeQuote(q) {
 }
 
 function getQuoteKey(q) {
-  // คีย์ง่าย ๆ ใช้กันซ้ำทันทีในหมวดเดียวกัน
   return [q.en, q.author, q.year].join('||')
 }
 
-/* ------------------ load categories ------------------ */
-// พยายามใช้ backend ก่อน ถ้าไม่มีให้ fallback เป็น quotes.json
+// ---------- data loading ----------
 async function fetchCategories() {
-  // 1) ลองถาม backend แบบ relative
+  // try backend first
   try {
     const res = await fetch(rel('api/categories'), { cache: 'no-store' })
     if (res.ok) {
@@ -59,9 +53,9 @@ async function fetchCategories() {
         return
       }
     }
-  } catch (_) { /* ไม่มี backend ก็เงียบไว้ */ }
+  } catch (_) {}
 
-  // 2) fallback: โหลด quotes.json แล้วสรุปหมวดหมู่
+  // static fallback
   const db = await loadLocalQuotesDB()
   QUOTES_DB = db
   categories = Object.keys(db).sort()
@@ -77,18 +71,15 @@ async function loadLocalQuotesDB() {
   if (!res.ok) throw new Error('load quotes.json failed')
   const data = await res.json()
 
-  const bucket = {} // { cat: [quotes] }
+  const bucket = {}
 
-  // กรณีเป็น Array ของ quotes
   if (Array.isArray(data)) {
     for (const raw of data) {
       const q = normalizeQuote(raw)
-      // เด็ดหมวดจากหลายชื่อคีย์ที่เจอบ่อย
       let cats = raw.cat ?? raw.category ?? raw.categories ?? raw.tags
       if (cats == null) cats = ['All']
       if (typeof cats === 'string') cats = [cats]
       if (!Array.isArray(cats) || cats.length === 0) cats = ['All']
-
       for (const c of cats) {
         const key = (c || 'All').toString()
         if (!bucket[key]) bucket[key] = []
@@ -98,21 +89,18 @@ async function loadLocalQuotesDB() {
     return bucket
   }
 
-  // กรณีเป็น Object แบบ { "Courage": [...], "Learning":[...] }
   if (typeof data === 'object' && data) {
-    const keys = Object.keys(data)
-    for (const k of keys) {
+    for (const k of Object.keys(data)) {
       const arr = Array.isArray(data[k]) ? data[k] : []
       bucket[k] = arr.map(normalizeQuote)
     }
     return bucket
   }
 
-  // ไม่รู้รูปแบบ ใส่ทั้งหมดไว้ All
   return { All: [] }
 }
 
-/* ------------------ render tabs ------------------ */
+// ---------- UI tabs ----------
 function renderTabs(cats) {
   const tabs = document.getElementById('tabs')
   if (!tabs) return
@@ -141,7 +129,6 @@ function selectCategory(cat, btn) {
   document.querySelectorAll('.tab-btn').forEach(b => b.setAttribute('aria-selected', 'false'))
   btn.setAttribute('aria-selected', 'true')
 
-  // reset UI
   setText('quote-en', `หมวดหมู่: ${cat}`)
   setText('quote-th', '—')
   setText('quote-credit', '')
@@ -153,7 +140,7 @@ function selectCategory(cat, btn) {
   getRandomQuote().finally(() => { isSwitchingCategory = false })
 }
 
-/* ------------------ helpers ------------------ */
+// ---------- helpers ----------
 function setText(id, text){
   const el = document.getElementById(id)
   if (el) el.textContent = text || ''
@@ -178,7 +165,7 @@ function waitForTransition(el) {
   })
 }
 
-/* ------------------ deck (static) + pick ------------------ */
+// ---------- static picking (deck, no-repeat) ----------
 function shuffleInPlace(arr){
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
@@ -195,8 +182,6 @@ function ensureDeck(cat, poolLen){
   }
   return deck
 }
-
-/** pickRandomLocal: ปรับให้ใช้สำรับไพ่ + กันซ้ำทันที */
 function pickRandomLocal(cat) {
   if (!QUOTES_DB) return null
   const pool = QUOTES_DB[cat] && QUOTES_DB[cat].length
@@ -207,16 +192,14 @@ function pickRandomLocal(cat) {
   if (!n) return null
 
   let deck = ensureDeck(cat, n)
-  // จั่วใบแรก
   let idx = deck.shift()
 
-  // กัน "ซ้ำทันที" ถ้ามีมากกว่า 1
   if (n > 1) {
     const lastKey = lastKeyMap[cat]
     const firstKey = getQuoteKey(pool[idx])
     if (firstKey === lastKey && deck.length > 0) {
       const alt = deck.shift()
-      deck.push(idx)     // ใบแรกที่ซ้ำทันทีเอาไปไว้ท้ายสำรับ
+      deck.push(idx)
       idx = alt
     }
   }
@@ -226,7 +209,7 @@ function pickRandomLocal(cat) {
   return chosen
 }
 
-/* ------------------ main ------------------ */
+// ---------- main ----------
 async function getRandomQuote() {
   const randomBtn = document.getElementById('btn-random')
   const copyBtn   = document.getElementById('btn-copy')
@@ -235,7 +218,6 @@ async function getRandomQuote() {
   if (!lines) return
 
   try {
-    // ยกเลิก request ก่อนหน้า (ถ้ามี)
     if (inflightCtrl) inflightCtrl.abort()
     inflightCtrl = new AbortController()
 
@@ -244,20 +226,16 @@ async function getRandomQuote() {
     copyBtn.disabled = true
     moreBtn.disabled = true
 
-    // fade-out
     lines.classList.add('is-fading')
     void lines.offsetWidth
 
     let data = null
 
     if (USE_BACKEND) {
-      // ดึงจาก backend + กัน "ซ้ำทันที" 1 ครั้งเผื่อกรณีขอบ ๆ
       const url = activeCat ? `api/random?cat=${encodeURIComponent(activeCat)}` : 'api/random'
-      // request แรก
       let d = await fetch(rel(url), { cache: 'no-store', signal: inflightCtrl.signal })
         .then(r => { if (!r.ok) throw new Error('Network error'); return r.json() })
 
-      // ถ้าดันไปซ้ำทันที ลองใหม่อีก 1 ครั้ง
       let q1 = normalizeQuote(d)
       const lastKey = lastKeyMap[activeCat]
       if (lastKey && getQuoteKey(q1) === lastKey) {
@@ -269,7 +247,7 @@ async function getRandomQuote() {
             d = d2
             q1 = q2
           }
-        } catch(_) { /* ถ้าล้มเหลวก็ใช้ตัวแรกไป */ }
+        } catch(_) {}
       }
 
       await waitForTransition(lines)
@@ -277,7 +255,6 @@ async function getRandomQuote() {
       lastKeyMap[activeCat] = getQuoteKey(data)
 
     } else {
-      // static mode: ใช้สำรับไพ่
       await waitForTransition(lines)
       const q = pickRandomLocal(activeCat)
       if (!q) throw new Error('No quote found in local DB')
@@ -286,19 +263,16 @@ async function getRandomQuote() {
 
     currentQuote = data = normalizeQuote(data)
 
-    // update content
     setText('quote-en', data.en ? '“' + data.en.trim() + '”' : '')
     setText('quote-th', (data.th || '').trim())
     setText('quote-credit', data.author ? `— ${data.author}${data.year ? ' ('+data.year+')' : ''}` : '')
 
-    // fade-in
     await new Promise(r => requestAnimationFrame(r))
     lines.classList.remove('is-fading')
 
     copyBtn.disabled = !(data.en)
     moreBtn.disabled = !(data.info || data.work || data.ref)
   } catch (err) {
-    // ถ้าถูก abort จากการเปลี่ยนหมวด/กดรัว ให้เงียบ ๆ ไป
     if (err.name !== 'AbortError') {
       setText('quote-en', 'มีบางอย่างผิดพลาด ลองอีกครั้งนะ')
       setText('quote-th', '')
@@ -329,7 +303,7 @@ async function copyQuote() {
   } catch(e){ console.error(e) }
 }
 
-/* ------------------ More panel ------------------ */
+// ---------- more panel ----------
 function openMore(){
   if (!currentQuote) return
   setText('more-work', currentQuote.work ? `ที่มา: ${currentQuote.work}` : '')
@@ -341,15 +315,17 @@ function openMore(){
       refEl.innerHTML = url.startsWith('http')
         ? `อ้างอิง: <a href="${url}" target="_blank" rel="noopener">${url}</a>`
         : `อ้างอิง: ${url}`
-    }else{
+    } else {
       refEl.textContent = ''
     }
   }
   document.getElementById('more-panel')?.classList.add('active')
 }
-function closeMore(){ document.getElementById('more-panel')?.classList.remove('active') }
+function closeMore(){
+  document.getElementById('more-panel')?.classList.remove('active')
+}
 
-/* ------------------ bootstrap ------------------ */
+// ---------- bootstrap ----------
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-random')?.addEventListener('click', getRandomQuote)
   document.getElementById('btn-copy')  ?.addEventListener('click', copyQuote)
@@ -358,14 +334,12 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('more-panel')?.addEventListener('click', (e)=>{ if(e.target.id==='more-panel') closeMore() })
   document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeMore() })
 
-  fetchCategories().catch((e) => {
-    console.warn('fallback failed:', e)
-    // สุดท้ายจริง ๆ ก็ยังพยายามสุ่มจาก local (ถ้าโหลดไม่สำเร็จจะ error เฉย ๆ)
+  fetchCategories().catch(() => {
     getRandomQuote()
   })
 })
 
-/* ---------- Theme Toggle (Light/Dark) ---------- */
+// ---------- theme toggle ----------
 ;(function(){
   const STORAGE_KEY = 'dq_theme'
   function applyTheme(theme){
