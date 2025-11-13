@@ -158,228 +158,762 @@
   }
   ],
   "มิตรภาพ": [
-    {
-      "en": "Friendship improves happiness and abates misery, by the doubling of our joy and the dividing of our grief.",
-      "th": "มิตรภาพเพิ่มพูนความสุข และแบ่งเบาความทุกข์—ยามสุขก็ทวี ยามทุกข์ก็แบ่ง",
-      "author": "Cicero",
-      "year": "44 BCE",
-      "work": "De Amicitia",
-      "info": "คิเซโรวิเคราะห์หน้าที่ของเพื่อนในทุกวัย—ทั้งหนุนความดี ช่วยกันพลาด และเป็นที่พึ่งเมื่อยามคับขัน ทำให้สุขลึกขึ้นและทุกข์เบาลง.",
-      "ref": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/Laelius_de_Amicitia/text*.html"
-    },
-    {
-      "en": "The only way to have a friend is to be one.",
-      "th": "หนทางที่จะมีเพื่อน คือการเป็นเพื่อนให้เขาก่อน",
-      "author": "R. W. Emerson",
-      "year": "1841",
-      "work": "Essay: Friendship",
-      "info": "เอเมอร์สันชี้ว่าความสัมพันธ์เติบโตจากการ ‘ให้ก่อน’—ความซื่อสัตย์และความเอื้อเฟื้อคือเมล็ดที่จะดึงดูดไมตรีกลับมาเอง.",
-      "ref": "https://emersoncentral.com/texts/essays-first-series/friendship/"
-    },
-    {
-      "en": "Without friends no one would choose to live, though he had all other goods.",
-      "th": "แม้มีสิ่งดีงามอื่นครบ ก็ไม่มีใครอยากอยู่โดยไร้เพื่อน",
-      "author": "Aristotle",
-      "year": "4th cent. BCE",
-      "work": "Nicomachean Ethics 8.1",
-      "info": "อริสโตเติลจัดมิตรภาพเป็น ‘สิ่งจำเป็นต่อชีวิตที่ดี’—ช่วยเยาว์วัยไม่หลงทาง พยุงผู้สูงวัย และผลักคนวัยทำงานให้ทำความดีได้จริง.",
-      "ref": "https://classics.mit.edu/Aristotle/nicomachaen.8.viii.html"
-    }
+  {
+    "en": "Friendship improves happiness and abates misery, by the doubling of our joy and the dividing of our grief.",
+    "th": "มิตรภาพเพิ่มพูนความสุข และแบ่งเบาความทุกข์—ยามสุขก็ทวี ยามทุกข์ก็แบ่ง",
+    "author": "Cicero",
+    "year": "44 BCE",
+    "work": "De Amicitia",
+    "info": "คิเซโรอธิบายบทบาทเพื่อนในทุกช่วงวัย—หนุนความดี ช่วยกันพลาด และเป็นที่พึ่งยามคับขัน ทำให้สุขลึกขึ้นและทุกข์เบาลง",
+    "ref": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/Laelius_de_Amicitia/text*.html"
+  },
+  {
+    "en": "The only way to have a friend is to be one.",
+    "th": "หนทางที่จะมีเพื่อน คือการเป็นเพื่อนให้เขาก่อน",
+    "author": "R. W. Emerson",
+    "year": "1841",
+    "work": "Essay: Friendship",
+    "info": "สัมพันธ์เริ่มจากการ ‘ให้’—ความซื่อสัตย์และเอื้อเฟื้อคือเมล็ดที่ดึงดูดไมตรีกลับมาเอง",
+    "ref": "https://emersoncentral.com/texts/essays-first-series/friendship/"
+  },
+  {
+    "en": "Without friends no one would choose to live, though he had all other goods.",
+    "th": "แม้มีดีครบทุกอย่าง ก็ไม่มีใครอยากอยู่โดยไร้เพื่อน",
+    "author": "Aristotle",
+    "year": "4th cent. BCE",
+    "work": "Nicomachean Ethics 8.1",
+    "info": "สำหรับอริสโตเติล มิตรภาพเป็นเงื่อนไขของ ‘ชีวิตที่ดี’—ไม่ใช่ของแถมหลังความสำเร็จ",
+    "ref": "https://classics.mit.edu/Aristotle/nicomachaen.8.viii.html"
+  },
+  {
+    "en": "Friends have all things in common.",
+    "th": "ของของสหายย่อมเป็นของร่วมกัน",
+    "author": "Plato (proverb cited)",
+    "year": "c. 375 BCE",
+    "work": "Republic 423e–424a; 449c",
+    "info": "สุภาษิตกรีกที่เพลโตยกมาพูดถึง ‘ความเป็นสาธารณะ’ ระหว่างสหาย—สะท้อนอุดมคติร่วมแรงร่วมใจกัน",
+    "ref": "https://plato.stanford.edu/entries/plato-ethics-politics/#FrieHaveAllThinComm"
+  },
+  {
+    "en": "Of all the things which wisdom provides for the happiness of the whole life, by far the greatest is the possession of friendship.",
+    "th": "ในสิ่งทั้งหลายที่ปัญญามอบให้เพื่อความรื่นรมย์ของชีวิต—‘มิตรภาพ’ ยิ่งใหญ่สุด",
+    "author": "Epicurus",
+    "year": "3rd cent. BCE",
+    "work": "Principal Doctrines / Vatican Sayings",
+    "info": "เอพิคูรัสวางมิตรภาพเป็นหัวใจของความผาสุก—ไม่ใช่ความฟุ้งเฟ้อ แต่คือความไว้วางใจและปลอดภัยทางใจ",
+    "ref": "https://newepicurean.com/epicurus-principal-doctrines/"
+  },
+  {
+    "en": "If you press me to say why I loved him, I can say no more than because he was he, and I was I.",
+    "th": "ถ้าถามว่าทำไมฉันจึงรักเขา ก็เพียงเพราะ ‘เขาเป็นเขา’ และ ‘ฉันเป็นฉัน’ เท่านั้น",
+    "author": "Michel de Montaigne",
+    "year": "1580",
+    "work": "Essays, I.28 “Of Friendship”",
+    "info": "มงแตญญ์ย้ำ ‘เอกลักษณ์เฉพาะ’ ของมิตรภาพ—เกินกว่าจะลดรูปเป็นผลประโยชน์หรือเหตุผลเดียว",
+    "ref": "https://www.gutenberg.org/ebooks/3600"
+  },
+  {
+    "en": "A principal fruit of friendship is the ease and discharge of the fullness of the heart.",
+    "th": "ผลสำคัญของมิตรภาพ คือได้ระบายความอัดแน่นในหัวใจ",
+    "author": "Francis Bacon",
+    "year": "1625",
+    "work": "Essays: Of Friendship",
+    "info": "เบคอนมองมิตรภาพเป็น ‘วาวล์ระบายใจ’—พื้นที่ปลอดภัยให้ความคิดและความกังวลได้ไหลออก",
+    "ref": "https://en.wikisource.org/wiki/The_Essays_of_Francis_Bacon/Of_Friends"
+  },
+  {
+    "en": "Is it not a joy to have friends come from afar?",
+    "th": "มีเพื่อนมาจากแดนไกล มิใช่เรื่องน่ายินดีหรือ",
+    "author": "Confucius",
+    "year": "5th cent. BCE",
+    "work": "Analects 1:1",
+    "info": "เปิดเล่มด้วยภาพ ‘เรียนรู้–มิตรภาพ’ คู่กัน—ความรู้ดีงอกในวงเพื่อนดี",
+    "ref": "https://ctext.org/analects/learning"
+  },
+  {
+    "en": "There are three friendships which are advantageous, and three which are injurious.",
+    "th": "มิตรสามแบบที่เป็นคุณ และมิตรสามแบบที่เป็นโทษ",
+    "author": "Confucius",
+    "year": "5th cent. BCE",
+    "work": "Analects 16:4",
+    "info": "ได้ประโยชน์คือคบคนซื่อตรง คนรักษาคำ คนรักเรียนรู้; โทษคือคบคนเสแสร้ง คนยอปอปั้น คนน้ำไหลไฟดับ",
+    "ref": "https://en.wikisource.org/wiki/The_Chinese_Classics/Volume_1/Confucian_Analects/XVI"
+  },
+  {
+    "en": "A friend is another self.",
+    "th": "มิตรคือ ‘ตัวฉันอีกคน’",
+    "author": "Aristotle",
+    "year": "4th cent. BCE",
+    "work": "Nicomachean Ethics 9.4 (1166a31)",
+    "info": "ความเป็นเพื่อนแท้คือการหวังดีต่อกันเพื่อ ‘ตัวเขาเอง’—สะท้อนคุณธรรมร่วม",
+    "ref": "https://www.jstor.org/stable/41350956"
+  }
   ],
-  "ความรัก": [
-    {
-      "en": "Love possesses not nor would it be possessed; for love is sufficient unto love.",
-      "th": "ความรักมิครอบครอง และไม่ยอมถูกครอบครอง—ความรักเพียงพอด้วยตัวของมันเอง",
-      "author": "Kahlil Gibran",
-      "year": "1923",
-      "work": "The Prophet — On Love",
-      "info": "ยิบรานวางภาพรักแบบให้พื้นที่เติบโต—ไม่ใช่ความเป็นเจ้าของแต่เป็นความงอกงามร่วมกันของสองชีวิต.",
-      "ref": "https://www.gutenberg.org/ebooks/58585"
-    },
-    {
-      "en": "Love is patient, love is kind…",
-      "th": "ความรักย่อมอดทน มีใจเอื้อเฟื้อ…",
-      "author": "Paul the Apostle",
-      "year": "c. 55",
-      "work": "1 Corinthians 13:4–7",
-      "info": "บทนิยามรักในคริสตธรรม—วัดด้วยความอดทน เมตตา ไม่อิจฉา ไม่อวดตน และไม่ยอมความอยุติธรรม.",
-      "ref": "https://www.biblegateway.com/passage/?search=1+Corinthians+13&version=ESV"
-    },
-    {
-      "en": "To love is to will the good of the other.",
-      "th": "การรักคือการปรารถนาดีเพื่อผู้อื่น",
-      "author": "Thomas Aquinas",
-      "year": "1265–1274",
-      "work": "Summa Theologiae",
-      "info": "นิยามรักในกรอบคุณธรรม: รักไม่ใช่อารมณ์ครอบครอง แต่คือการตั้งใจส่งเสริม ‘ความดีอันพึงปรารถนา’ แก่อีกฝ่ายอย่างเสมอต้นเสมอปลาย.",
-      "ref": "https://www.newadvent.org/summa/3026.htm"
-    }
-  ],
-  "การเรียน/พัฒนา": [
-    {
-      "en": "The unexamined life is not worth living.",
-      "th": "ชีวิตที่ไม่ไตร่ตรอง ไม่คู่ควรแก่การดำเนินไป",
-      "author": "Socrates",
-      "year": "399 BCE",
-      "work": "Plato, Apology 38a",
-      "info": "บริบทคือคำให้การต่อหน้าศาลเอเธนส์—โสเครตีสยืนยันว่าการทบทวนตนและใฝ่รู้คือหน้าที่พลเมืองผู้รักความจริง.",
-      "ref": "https://classics.mit.edu/Plato/apology.html"
-    },
-    {
-      "en": "To study and not think is a waste. To think and not study is dangerous.",
-      "th": "เรียนโดยไม่คิด ไร้ผล; คิดโดยไม่เรียน อันตราย",
-      "author": "Confucius",
-      "year": "5th cent. BCE",
-      "work": "Analects 2:15",
-      "info": "ขงจื่อเน้น ‘สมดุล’ ระหว่างข้อมูล (เรียน) กับปัญญา (คิด)—ขาดอย่างใดอย่างหนึ่งจะพาไปสู่ความเผอเรอหรือความด่วนสรุป.",
-      "ref": "https://www.acmuller.net/con-dao/analects.html#div-2"
-    },
-    {
-      "en": "We should be learning to live all our life.",
-      "th": "ตราบเท่าที่ยังมีชีวิต เราควรเรียนรู้วิธีมีชีวิตอยู่เสมอ",
-      "author": "Seneca",
-      "year": "c. 65",
-      "work": "Moral Letters, Letter 76",
-      "info": "สโตอิกชี้ว่า ‘ศิลปะแห่งชีวิต’ ต้องฝึกชั่วชีวิต—ไม่ใช่วิชาที่เรียนจบ แต่เป็นทักษะที่ขัดเกลาได้เสมอ.",
-      "ref": "https://www.loebclassics.com/view/seneca_younger-epistles/1917/pb_LCL076.257.xml"
-    }
-  ],
-  "เป้าหมาย/วินัย": [
-    {
-      "en": "First say to yourself what you would be; and then do what you have to do.",
-      "th": "บอกตนเองก่อนว่าอยากเป็นคนแบบใด แล้วลงมือทำสิ่งที่ควรทำ",
-      "author": "Epictetus",
-      "year": "c. 95",
-      "work": "Discourses 3.23",
-      "info": "เริ่มจากนิยามบทบาทในใจให้ชัด—แล้ววางวินัยและการตัดสินใจประจำวันให้สอดรับบทบาทนั้นอย่างต่อเนื่อง.",
-      "ref": "http://classics.mit.edu/Epictetus/discourses.3.three.html"
-    },
-    {
-      "en": "The victorious strategist only seeks battle after the victory has been won.",
-      "th": "แม่ทัพผู้ชนะ วางให้ชนะก่อนแล้วจึงรบ",
-      "author": "Sun Tzu",
-      "year": "5th cent. BCE",
-      "work": "The Art of War, ch. 4",
-      "info": "หลักยุทธศาสตร์คือ ‘ชนะด้วยการเตรียม’—ประเมินกำลัง วางเงื่อนไข และบังคับเกมก่อนปะทะจริง.",
-      "ref": "https://suntzusaid.com/book/4"
-    },
-    {
-      "en": "Well done is better than well said.",
-      "th": "ทำได้จริง ดีกว่าพูดได้ดี",
-      "author": "Benjamin Franklin",
-      "year": "1737",
-      "work": "Poor Richard’s Almanack",
-      "info": "สุภาษิตเชิงลงมือของแฟรงคลิน—ให้ผลลัพธ์พาความน่าเชื่อถือ ไม่ใช่คำประกาศ.",
-      "ref": "https://founders.archives.gov/documents/Franklin/01-02-02-0001"
-    }
-  ],
-  "สุขภาพใจ": [
-    {
-      "en": "Men are disturbed not by things, but by the views which they take of them.",
-      "th": "ผู้คนมิได้ถูกรบกวนจากเหตุการณ์ แต่จากมุมมองที่มีต่อมัน",
-      "author": "Epictetus",
-      "year": "c. 125",
-      "work": "Enchiridion §5",
-      "info": "เทคนิคสโตอิก: แยก ‘เหตุการณ์’ ออกจาก ‘การตีความ’—เปลี่ยนมุมมองได้ ก็ลดทุกข์ได้.",
-      "ref": "http://classics.mit.edu/Epictetus/epicench.html"
-    },
-    {
-      "en": "You have power over your mind — not outside events.",
-      "th": "เธอมีอำนาจเหนือจิตใจ ไม่ใช่เหนือเหตุการณ์ภายนอก",
-      "author": "Marcus Aurelius",
-      "year": "c. 170–180",
-      "work": "Meditations 8.47",
-      "info": "เน้น ‘ศูนย์ควบคุมภายใน’—โลกภายนอกผันผวนได้ แต่การตอบสนองเป็นพื้นที่รับผิดชอบของเรา.",
-      "ref": "https://archive.org/details/meditationsmarcusaurelius"
-    },
-    {
-      "en": "He who conquers others is strong; he who conquers himself is mighty.",
-      "th": "ผู้ชนะคนอื่นคือผู้แข็งแรง ผู้ชนะตนเองคือผู้ยิ่งใหญ่",
-      "author": "Lao Tzu",
-      "year": "4–3 BCE (trad.)",
-      "work": "Tao Te Ching, ch. 33",
-      "info": "ไล่ระดับ ‘รู้คนอื่น’ สู่ ‘รู้ตน’ และ ‘ชนะตน’—เสนอว่าพลังที่มั่นคงสุดมาจากวินัยภายในและความพอเพียง.",
-      "ref": "https://terebess.hu/english/tao/lau.html"
-    }
-  ],
-  "ครอบครัว": [
-    {
-      "en": "Being filial and fraternal — is this not the root of humaneness?",
-      "th": "ความกตัญญูและเคารพพี่น้อง—มิใช่หรือคือรากของความเป็นคนดี",
-      "author": "Confucius",
-      "year": "5th cent. BCE",
-      "work": "Analects 1:2",
-      "info": "ขงจื่อวาง ‘บ้าน’ เป็นโรงเรียนคุณธรรม—รากของ ‘เหริน/เมตตา’ เริ่มจากกตัญญูและเคารพกันในครอบครัว.",
-      "ref": "https://www.acmuller.net/con-dao/analects.html#div-1"
-    },
-    {
-      "en": "The family is the association established by nature for the supply of men’s everyday wants.",
-      "th": "ครอบครัวคือสหภาพตามธรรมชาติ เพื่อตอบสนองความต้องการพื้นฐานของมนุษย์",
-      "author": "Aristotle",
-      "year": "4th cent. BCE",
-      "work": "Politics, Book I",
-      "info": "มองครอบครัวเป็นหน่วยฐานของสังคม—แหล่งเพาะเลี้ยงคุณธรรมและความช่วยเหลือซึ่งกันและกันก่อนระดับรัฐ.",
-      "ref": "http://classics.mit.edu/Aristotle/politics.1.one.html"
-    }
-  ],
-  "ทำงาน/แรงบันดาลใจ": [
-    {
-      "en": "The impediment to action advances action. What stands in the way becomes the way.",
-      "th": "อุปสรรคผลักการกระทำให้ก้าวหน้า—สิ่งขวางทาง กลายเป็นเส้นทาง",
-      "author": "Marcus Aurelius",
-      "year": "c. 170–180",
-      "work": "Meditations 5.20",
-      "info": "ท่าทีแบบแปลงปัญหาให้เป็นครู—กำหนดงานถัดไปจากสิ่งที่ขวางอยู่ ติดขัดตรงไหน ตรงนั้นคือบทเรียน.",
-      "ref": "https://archive.org/details/meditationsmarcusaurelius"
-    },
-    {
-      "en": "It is not that we have a short time to live, but that we waste much of it.",
-      "th": "ไม่ใช่ว่าเรามีเวลาชีวิตน้อย—แต่เรามักปล่อยให้มันสูญเปล่า",
-      "author": "Seneca",
-      "year": "c. 49",
-      "work": "On the Shortness of Life",
-      "info": "โฟกัสสิ่งสำคัญเป็นยาแก้ ‘ชีวิตสั้น’—ตัดสิ่งลวงตา รักษาเวลาสำหรับการกระทำที่มีความหมาย.",
-      "ref": "https://en.wikisource.org/wiki/Of_the_Shortness_of_Life"
-    },
-    {
-      "en": "Dost thou love life? Then do not squander time; for that’s the stuff life is made of.",
-      "th": "รักชีวิตหรือไม่? ถ้ารัก อย่าทิ้งเวลาทิ้ง—เพราะชีวิตทำจากเวลา",
-      "author": "Benjamin Franklin",
-      "year": "1758",
-      "work": "The Way to Wealth",
-      "info": "แฟรงคลินเทียบ ‘เวลา’ เป็นวัตถุดิบของทุกผลงาน—จัดเวลาช่วงทองของวันไว้ให้สิ่งที่สำคัญที่สุด.",
-      "ref": "https://founders.archives.gov/documents/Franklin/01-07-02-0001"
-    }
-  ],
-  "ความหวัง": [
-    {
-      "en": "'Hope' is the thing with feathers — that perches in the soul…",
-      "th": "ความหวังคือนกน้อยที่เกาะอยู่ในวิญญาณ—ร้องไม่รู้จบ แม้พายุโหมกระหน่ำ",
-      "author": "Emily Dickinson",
-      "year": "c. 1861",
-      "work": "Poem 254",
-      "info": "ดิกคินสันให้ภาพ ‘ความหวัง’ แบบอ่อนโยนแต่ทนทาน—อยู่เงียบ ๆ คอยค้ำใจแม้ในพายุ.",
-      "ref": "https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314"
-    },
-    {
-      "en": "This too shall pass.",
-      "th": "เดี๋ยวนี้ก็จะผ่านไป",
-      "author": "Persian Proverb",
-      "year": "—",
-      "work": "Proverb (attributed, medieval Persian)",
-      "info": "สำนวนปลอบใจเก่าแก่—ตอกย้ำความจริงว่าทั้งสุขและทุกข์ล้วนชั่วคราว จึงควรรักษาสติเมื่อตกคลื่น.",
-      "ref": "https://en.wikipedia.org/wiki/This_too_shall_pass"
-    },
-    {
-      "en": "Everything can be taken from a man but one thing: the last of the human freedoms — to choose one’s attitude.",
-      "th": "ทุกสิ่งอาจถูกพรากไปได้ ยกเว้นสิ่งสุดท้าย—เสรีภาพในการเลือกท่าทีของเรา",
-      "author": "Viktor E. Frankl",
-      "year": "1946",
-      "work": "Man’s Search for Meaning",
-      "info": "ฟรังเคิลชี้ ‘เสรีภาพสุดท้าย’ ที่ไม่มีใครพรากได้—การกำหนดท่าทีตอบสนองต่อความทุกข์ และสร้างความหมายจากมัน.",
-      "ref": "https://archive.org/details/manssearchforme00fran"
-    }
-  ],
+"ความรัก": [
+  {
+    "en": "Love possesses not nor would it be possessed; for love is sufficient unto love.",
+    "th": "ความรักมิครอบครอง และไม่ยอมถูกครอบครอง—ความรักเพียงพอด้วยตัวของมันเอง",
+    "author": "Kahlil Gibran",
+    "year": "1923",
+    "work": "The Prophet — On Love",
+    "info": "ยิบรานวางภาพรักแบบให้พื้นที่เติบโต—ไม่ใช่ความเป็นเจ้าของ แต่เป็นการงอกงามร่วมกันของสองชีวิต",
+    "ref": "https://www.gutenberg.org/ebooks/58585"
+  },
+  {
+    "en": "Love is patient, love is kind…",
+    "th": "ความรักย่อมอดทน มีใจเอื้อเฟื้อ…",
+    "author": "Paul the Apostle",
+    "year": "c. 55",
+    "work": "1 Corinthians 13:4–7",
+    "info": "มาตรวัดรักในคริสตธรรม—อดทน เมตตา ไม่อิจฉา ไม่อวดตน และไม่ชื่นชมความอยุติธรรม",
+    "ref": "https://www.biblegateway.com/passage/?search=1+Corinthians+13&version=ESV"
+  },
+  {
+    "en": "To love is to will the good of the other.",
+    "th": "การรักคือการปรารถนาดีเพื่อผู้อื่น",
+    "author": "Thomas Aquinas",
+    "year": "1265–1274",
+    "work": "Summa Theologiae",
+    "info": "นิยามรักเชิงคุณธรรม—ไม่ใช่ความเป็นเจ้าของ แต่คือการตั้งใจส่งเสริม ‘ความดีอันพึงปรารถนา’ แก่อีกฝ่าย",
+    "ref": "https://www.newadvent.org/summa/3026.htm"
+  },
+  {
+    "en": "Love may be described as the love of the everlasting possession of the good.",
+    "th": "ความรักคือความปรารถนาจะได้ครอบครองความดีอย่างยั่งยืน",
+    "author": "Plato",
+    "year": "c. 385–370 BCE",
+    "work": "Symposium 206a–e",
+    "info": "ไดโอติมาชี้ว่า ‘ตัวรัก’ คือแรงใฝ่หาความดีที่ยืนยาว—ยกระดับรักจากแค่ความเสน่หาไปสู่การงอกงามทางคุณธรรม",
+    "ref": "http://www.perseus.tufts.edu/hopper/text?doc=Plat.+Sym.+206a"
+  },
+  {
+    "en": "Love is not love / Which alters when it alteration finds…",
+    "th": "รักแท้มิใช่รักที่เปลี่ยนไปเมื่อสิ่งรอบตัวเปลี่ยน",
+    "author": "William Shakespeare",
+    "year": "1609",
+    "work": "Sonnet 116",
+    "info": "ภาพรักที่มั่นคง—ไม่ไหวเอนตามเงื่อนไขและเวลา เป็นเสมือน ‘ดาวเหนือ’ ให้การครองรัก",
+    "ref": "https://www.poetryfoundation.org/poems/45106/sonnet-116-let-me-not-to-the-marriage-of-true-minds"
+  },
+  {
+    "en": "Love, and do what you will.",
+    "th": "จงรัก แล้วทำสิ่งที่เธอประสงค์",
+    "author": "Augustine of Hippo",
+    "year": "c. 407",
+    "work": "Homilies on the First Epistle of John, Tractate 7",
+    "info": "เมื่อรากคือ ‘รัก’ อย่างแท้จริง การกระทำย่อมถูกชี้นำไปสู่ความดี—กฎจึงถูกรับใช้โดยจิตที่รัก",
+    "ref": "https://www.newadvent.org/fathers/170207.htm"
+  },
+  {
+    "en": "The Love that moves the sun and the other stars.",
+    "th": "รัก—ผู้ขับเคลื่อนดวงอาทิตย์และดวงดาวทั้งหลาย",
+    "author": "Dante Alighieri",
+    "year": "1320",
+    "work": "Paradiso XXXIII.145",
+    "info": "บทสรุปจักรวาลของดันเต้—รักไม่ใช่แค่ความรู้สึกส่วนตัว แต่คือพลังหลอมรวมและขับเคลื่อนสรรพสิ่ง",
+    "ref": "https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-33/"
+  },
+  {
+    "en": "Power without love is reckless and abusive, and love without power is sentimental and anemic.",
+    "th": "อำนาจที่ไร้รักย่อมหุนหันและรุนแรง ส่วนรักที่ไร้อำนาจย่อมเลื่อนลอยและอ่อนแรง",
+    "author": "Martin Luther King Jr.",
+    "year": "1967",
+    "work": "Address: “Where Do We Go From Here?” (SCLC, Aug 16, 1967)",
+    "info": "MLK สังเคราะห์รัก (คุณธรรม) เข้ากับอำนาจ (การเปลี่ยนโครงสร้าง)—ต้องมีทั้งคู่เพื่อความยุติธรรมที่จับต้องได้",
+    "ref": "https://kinginstitute.stanford.edu/where-do-we-go-here"
+  },
+  {
+    "en": "Embracing a love ethic means living care, commitment, trust, responsibility, respect, and knowledge in daily life.",
+    "th": "การยึดมั่นจริยธรรมแห่งรัก คือการลงมือ ‘ดูแล–มุ่งมั่น–ไว้วางใจ–รับผิดชอบ–เคารพ–เรียนรู้’ ในชีวิตประจำวัน",
+    "author": "bell hooks",
+    "year": "2000",
+    "work": "All About Love: New Visions",
+    "info": "นิยามรักเชิงปฏิบัติ—วัดจากการกระทำซ้ำ ๆ มากกว่าความรู้สึกฉาบฉวย และต้องฝึกอย่างมีสติ",
+    "ref": "https://archive.org/details/all-about-love-new-visions-bell/All-About-Love-New-Visions-Bell.pdf"
+  },
+  {
+    "en": "For one human being to love another: that is perhaps the most difficult of all our tasks… the work for which all other work is but preparation.",
+    "th": "การที่มนุษย์คนหนึ่งจะรักอีกคน—อาจเป็นภารกิจที่ยากที่สุด…เป็นงานที่งานอื่นทั้งมวลเป็นเพียงการเตรียมตัว",
+    "author": "Rainer Maria Rilke",
+    "year": "1904",
+    "work": "Letters to a Young Poet, Letter 7",
+    "info": "ริลเคเสนอว่ารักคือ ‘งานชีวิต’—ต้องเรียนรู้ ฝึกฝน และเติบโตไปด้วยกัน ไม่ใช่แค่ความรู้สึกพริบตา",
+    "ref": "https://www.poetryintranslation.com/PITBR/German/RilkeLetters.php"
+  }
+],
+"การเรียน/พัฒนา": [
+  {
+    "en": "The unexamined life is not worth living.",
+    "th": "ชีวิตที่ไม่ไตร่ตรอง ไม่คู่ควรแก่การดำเนินไป",
+    "author": "Socrates",
+    "year": "399 BCE",
+    "work": "Plato, Apology 38a",
+    "info": "บริบทคือคำให้การต่อหน้าศาลเอเธนส์—โสเครตีสยืนยันว่าการทบทวนตนและใฝ่รู้คือหน้าที่พลเมืองผู้รักความจริง.",
+    "ref": "https://classics.mit.edu/Plato/apology.html"
+  },
+  {
+    "en": "To study and not think is a waste. To think and not study is dangerous.",
+    "th": "เรียนโดยไม่คิด ไร้ผล; คิดโดยไม่เรียน อันตราย",
+    "author": "Confucius",
+    "year": "5th cent. BCE",
+    "work": "Analects 2:15",
+    "info": "ขงจื่อเน้น ‘สมดุล’ ระหว่างข้อมูล (เรียน) กับปัญญา (คิด)—ขาดอย่างใดอย่างหนึ่งจะพาไปสู่ความเผอเรอหรือความด่วนสรุป.",
+    "ref": "https://www.acmuller.net/con-dao/analects.html#div-2"
+  },
+  {
+    "en": "We should be learning to live all our life.",
+    "th": "ตราบเท่าที่ยังมีชีวิต เราควรเรียนรู้วิธีมีชีวิตอยู่เสมอ",
+    "author": "Seneca",
+    "year": "c. 65",
+    "work": "Moral Letters, Letter 76",
+    "info": "สโตอิกชี้ว่า ‘ศิลปะแห่งชีวิต’ ต้องฝึกชั่วชีวิต—ไม่ใช่วิชาที่เรียนจบ แต่เป็นทักษะที่ขัดเกลาได้เสมอ.",
+    "ref": "https://www.loebclassics.com/view/LCL076/1917/volume.xml"
+  },
+  {
+    "en": "For the things we have to learn before we can do them, we learn by doing them.",
+    "th": "สิ่งที่เราต้องเรียนก่อนจึงจะทำได้—เราก็เรียนรู้ได้จากการลงมือทำ",
+    "author": "Aristotle",
+    "year": "c. 350 BCE",
+    "work": "Nicomachean Ethics 2.1 (1103a)",
+    "info": "อริสโตเติลอธิบายว่า ‘คุณธรรม/ทักษะ’ เกิดจากการฝึกซ้ำ—แปลงความรู้ให้เป็นนิสัยผ่านการปฏิบัติจริง.",
+    "ref": "https://classics.mit.edu/Aristotle/nicomachaen.2.ii.html"
+  },
+  {
+    "en": "The mind is not a vessel to be filled but a fire to be kindled.",
+    "th": "จิตไม่ใช่ภาชนะให้เทใส่ แต่เป็นไฟที่ต้องจุดให้ลุก",
+    "author": "Plutarch",
+    "year": "c. 100",
+    "work": "Moralia — On Listening to Lectures (De Auditu) 48c",
+    "info": "แนวคิดการศึกษาแบบ ‘จุดประกาย’—เน้นปลุกความอยากรู้และแรงใจ มากกว่ายัดข้อมูลให้จำ.",
+    "ref": "https://quoteinvestigator.com/2013/03/28/mind-fire/"
+  },
+  {
+    "en": "It is impossible for a man to learn what he thinks he already knows.",
+    "th": "ไม่มีวันเรียนรู้อะไรได้ หากเราคิดว่า ‘รู้อยู่แล้ว’",
+    "author": "Epictetus",
+    "year": "c. 100",
+    "work": "Discourses 2.17.1",
+    "info": "เงื่อนไขแรกของการเติบโตคือ ‘ใจที่เปิด’—ยอมรับช่องโหว่ของตน จึงจะเติมรู้ใหม่ได้.",
+    "ref": "http://classics.mit.edu/Epictetus/discourses.2.seventeen.html"
+  },
+  {
+    "en": "Reviewing the old and learning the new—one is fit to be a teacher.",
+    "th": "ทบทวนสิ่งเก่าและเรียนรู้สิ่งใหม่เสมอ—จึงคู่ควรเป็นครู",
+    "author": "Confucius",
+    "year": "5th cent. BCE",
+    "work": "Analects 2:11",
+    "info": "วินัยการเรียนรู้แบบวนรอบ: ทบทวน-เชื่อมโยง-ต่อยอด ทำให้ความรู้เก่ากลายเป็นฐานของนวัตกรรม.",
+    "ref": "https://www.acmuller.net/con-dao/analects.html#div-2"
+  },
+  {
+    "en": "To know what you know and to know what you do not know—that is true knowledge.",
+    "th": "รู้ว่ารู้อะไร และรู้ว่าอะไรที่ยังไม่รู้—นั่นแหละปัญญาแท้",
+    "author": "Confucius",
+    "year": "5th cent. BCE",
+    "work": "Analects 2:17",
+    "info": "สติรู้ขอบเขตความรู้ของตน เป็นฐานของการถามที่ดีและการเรียนที่ลึก.",
+    "ref": "https://www.acmuller.net/con-dao/analects.html#div-2"
+  },
+  {
+    "en": "Much learning does not teach understanding.",
+    "th": "เรียนมาก…ไม่ได้แปลว่าเข้าใจ",
+    "author": "Heraclitus",
+    "year": "c. 500 BCE",
+    "work": "Fragment DK B40",
+    "info": "เฮราคลิตุสเตือนให้ ‘ย่อย’ ไม่ใช่ ‘ยัด’—ปริมาณความรู้ไม่เท่ากับปัญญาที่มองเห็นความเชื่อมโยง.",
+    "ref": "https://plato.stanford.edu/entries/heraclitus/#Frag"
+  },
+  {
+    "en": "Read not to contradict and confute; nor to believe and take for granted; … but to weigh and consider.",
+    "th": "อ่านไม่ใช่เพื่อเถียงหรือเชื่อทันที—แต่อ่านเพื่อไตร่ตรองและพิจารณา",
+    "author": "Francis Bacon",
+    "year": "1625",
+    "work": "Essays — Of Studies",
+    "info": "ตั้งท่าทีต่อการอ่านให้ถูก: บางเล่ม ‘ชิม’ บางเล่ม ‘กลืน’ และบางเล่มต้อง ‘เคี้ยว’ จนซึมเป็นของเรา.",
+    "ref": "https://www.bartleby.com/lit-hub/reference/of-studies/"
+  }
+],
+"เป้าหมาย/วินัย": [
+  {
+    "en": "First say to yourself what you would be; and then do what you have to do.",
+    "th": "บอกตนเองก่อนว่าอยากเป็นคนแบบใด แล้วลงมือทำสิ่งที่ควรทำ",
+    "author": "Epictetus",
+    "year": "c. 95",
+    "work": "Discourses 3.23",
+    "info": "เริ่มจากนิยามบทบาทในใจให้ชัด—แล้ววางวินัยและการตัดสินใจประจำวันให้สอดรับบทบาทนั้นอย่างต่อเนื่อง",
+    "ref": "http://classics.mit.edu/Epictetus/discourses.3.three.html"
+  },
+  {
+    "en": "The victorious strategist only seeks battle after the victory has been won.",
+    "th": "แม่ทัพผู้ชนะ วางให้ชนะก่อนแล้วจึงรบ",
+    "author": "Sun Tzu",
+    "year": "5th cent. BCE",
+    "work": "The Art of War, ch. 4",
+    "info": "หลักยุทธศาสตร์คือ ‘ชนะด้วยการเตรียม’—ประเมินกำลัง วางเงื่อนไข และบังคับเกมก่อนปะทะจริง",
+    "ref": "https://suntzusaid.com/book/4"
+  },
+  {
+    "en": "Well done is better than well said.",
+    "th": "ทำได้จริง ดีกว่าพูดได้ดี",
+    "author": "Benjamin Franklin",
+    "year": "1737",
+    "work": "Poor Richard’s Almanack",
+    "info": "ให้ผลลัพธ์พาความน่าเชื่อถือ—ตั้งเป้าแล้วลงมือจนเป็นรูปธรรม",
+    "ref": "https://founders.archives.gov/documents/Franklin/01-02-02-0001"
+  },
+  {
+    "en": "If it is not right, do not do it; if it is not true, do not say it.",
+    "th": "ถ้าไม่ถูกต้อง—อย่าทำ; ถ้าไม่จริง—อย่าพูด",
+    "author": "Marcus Aurelius",
+    "year": "c. 170–180",
+    "work": "Meditations 12.17",
+    "info": "วินัยเชิงคุณธรรมแบบสโตอิก—ควบคุมการกระทำและคำพูดให้ตรงกับความจริงและความถูกต้อง",
+    "ref": "https://en.wikisource.org/wiki/The_Meditations_of_the_Emperor_Marcus_Antoninus/Book_12"
+  },
+  {
+    "en": "The gentleman wishes to be slow to speak, but quick to act.",
+    "th": "สุภาพชนอยาก ‘พูดให้ช้า’ แต่ ‘ลงมือให้ไว’",
+    "author": "Confucius",
+    "year": "5th cent. BCE",
+    "work": "Analects 4:24",
+    "info": "หลักวินัยแบบขงจื่อ—ลดคำสัญญาให้พอดี เพิ่มการปฏิบัติให้มากกว่า",
+    "ref": "https://www.acmuller.net/con-dao/analects.html#div-4"
+  },
+  {
+    "en": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "th": "เราคือสิ่งที่เราทำซ้ำ ๆ ความเป็นเลิศจึงไม่ใช่การกระทำครั้งเดียว แต่เป็นนิสัย",
+    "author": "Will Durant (summarizing Aristotle)",
+    "year": "1926",
+    "work": "The Story of Philosophy",
+    "info": "ประโยคสรุปแนวคิด ‘คุณธรรมคือความเคยชิน’ ของอริสโตเติล—มักถูกอ้างผิดว่าเป็นคำพูดตรง ๆ ของอริสโตเติล",
+    "ref": "https://archive.org/details/storyofphilosoph00dura"
+  },
+  {
+    "en": "Plans are worthless, but planning is everything.",
+    "th": "แผนบนกระดาษอาจไร้ค่า แต่ ‘กระบวนการวางแผน’ มีค่ามาก",
+    "author": "Dwight D. Eisenhower",
+    "year": "1957",
+    "work": "Address to the National Defense Executive Reserve (Nov 14, 1957)",
+    "info": "ย้ำให้ฝึกคิดล่วงหน้า ปรับตัว และซ้อมสถานการณ์—หัวใจของวินัยเชิงยุทธศาสตร์",
+    "ref": "https://www.eisenhowerlibrary.gov/eisenhowers/quotes/plans-are-worthless"
+  },
+  {
+    "en": "You have a right to perform your prescribed duty, but not to the fruits of action.",
+    "th": "เธอมีสิทธิ์ใน ‘การกระทำ’ ที่ควรทำ แต่ไม่พึงยึดติด ‘ผล’ ของการกระทำนั้น",
+    "author": "Vyāsa (trad.)",
+    "year": "c. 2nd cent. BCE",
+    "work": "Bhagavad Gītā 2.47",
+    "info": "วินัยแบบกิตะ: โฟกัสหน้าที่และกระบวนการ—ปล่อยผลลัพธ์ ไม่ยึดติด ก็ทำได้สม่ำเสมอขึ้น",
+    "ref": "https://vedabase.io/en/library/bg/2/47/"
+  },
+  {
+    "en": "Do nothing which is of no use.",
+    "th": "อย่าทำสิ่งใดที่ไม่เป็นประโยชน์",
+    "author": "Miyamoto Musashi",
+    "year": "1645",
+    "work": "The Book of Five Rings (Ground Book, Principle 9)",
+    "info": "วินัยเชิงลบ (via negativa)—ตัดสิ่งไร้ค่าสิ่งเดียวก็ทำให้ระบบทั้งก้อนมีประสิทธิภาพขึ้น",
+    "ref": "https://archive.org/details/english-collections-k-z/The%20Book%20of%20Five%20Rings%20-%20Miyamoto%2C%20Musashi.pdf"
+  },
+  {
+    "en": "Resolve to perform what you ought; perform without fail what you resolve.",
+    "th": "ตั้งใจทำในสิ่งที่ควรทำ และทำให้ลุล่วงตามที่ตั้งใจไว้",
+    "author": "Benjamin Franklin",
+    "year": "c. 1726 (pub. 1791)",
+    "work": "Autobiography — The 13 Virtues (Resolution)",
+    "info": "แปลง ‘เจตนา’ ให้เป็น ‘นิสัย’ ด้วยคำมั่นสัญญาต่อใจตัวเอง—เครื่องมือคลาสสิกของวินัยส่วนบุคคล",
+    "ref": "https://nationalhumanitiescenter.org/pds/becomingamer/ideas/text3/franklin_artvirtue.pdf"
+  }
+],
+"สุขภาพใจ": [
+  {
+    "en": "Men are disturbed not by things, but by the views which they take of them.",
+    "th": "ผู้คนมิได้ถูกรบกวนจากเหตุการณ์ แต่จากมุมมองที่มีต่อมัน",
+    "author": "Epictetus",
+    "year": "c. 125",
+    "work": "Enchiridion §5",
+    "info": "เทคนิคสโตอิก: แยก ‘เหตุการณ์’ ออกจาก ‘การตีความ’—เปลี่ยนมุมมองได้ ก็ลดทุกข์ได้.",
+    "ref": "http://classics.mit.edu/Epictetus/epicench.html"
+  },
+  {
+    "en": "You have power over your mind — not outside events.",
+    "th": "เธอมีอำนาจเหนือจิตใจ ไม่ใช่เหนือเหตุการณ์ภายนอก",
+    "author": "Marcus Aurelius",
+    "year": "c. 170–180",
+    "work": "Meditations 8.47",
+    "info": "เน้น ‘ศูนย์ควบคุมภายใน’—โลกภายนอกผันผวนได้ แต่การตอบสนองเป็นพื้นที่รับผิดชอบของเรา.",
+    "ref": "https://lexundria.com/m_aur_med/8/lg"
+  },
+  {
+    "en": "He who conquers others is strong; he who conquers himself is mighty.",
+    "th": "ผู้ชนะคนอื่นคือผู้แข็งแรง ผู้ชนะตนเองคือผู้ยิ่งใหญ่",
+    "author": "Lao Tzu",
+    "year": "4–3 BCE (trad.)",
+    "work": "Tao Te Ching, ch. 33",
+    "info": "ไล่ระดับ ‘รู้คนอื่น’ สู่ ‘รู้ตน’ และ ‘ชนะตน’—เสนอว่าพลังที่มั่นคงสุดมาจากวินัยภายในและความพอเพียง.",
+    "ref": "https://ctext.org/dao-de-jing"
+  },
+
+  {
+    "en": "The soul becomes dyed with the color of its thoughts.",
+    "th": "จิตวิญญาณจะถูกย้อมด้วยสีของความคิดเรา",
+    "author": "Marcus Aurelius",
+    "year": "c. 170–180",
+    "work": "Meditations 5.16",
+    "info": "สุขภาพใจเริ่มที่ ‘อนามัยทางความคิด’—ฝึกสังเกตความคิดซ้ำ ๆ ที่กำลังย้อมอารมณ์และพฤติกรรมเรา.",
+    "ref": "https://lexundria.com/m_aur_med/5.16/lg"
+  },
+  {
+    "en": "Some things are in our control and others not.",
+    "th": "บางอย่างอยู่ในอำนาจควบคุมของเรา และบางอย่างไม่ใช่",
+    "author": "Epictetus",
+    "year": "c. 125",
+    "work": "Enchiridion §1",
+    "info": "หลัก ‘แยกสิ่งควบคุมได้/ไม่ได้’ ช่วยจัดพลังใจให้ถูกที่—ลงมือกับสิ่งในอำนาจ ปล่อยวางสิ่งนอกอำนาจ.",
+    "ref": "http://classics.mit.edu/Epictetus/epicench.html"
+  },
+  {
+    "en": "Mind precedes all mental states; they are all mind-wrought.",
+    "th": "จิตเป็นใหญ่ จิตเป็นประธาน ทุกสิ่งสำเร็จได้ด้วยใจ",
+    "author": "Buddha (Dhammapada)",
+    "year": "c. 3rd–1st cent. BCE (trad.)",
+    "work": "Dhammapada 1:1–2 (Yamakavagga)",
+    "info": "ต้นทางของสุขทุกข์เริ่มที่ ‘คุณภาพของใจ’—ฝึกสติ/เมตตา ใจดี การกระทำก็ดีตาม.",
+    "ref": "https://www.accesstoinsight.org/tipitaka/kn/dhp/dhp.01.budd.html"
+  },
+  {
+    "en": "Perform your duty with equanimity, abandoning attachment to success or failure—such equanimity is called yoga.",
+    "th": "ทำหน้าที่ด้วยใจเสมอ ไม่ยึดติดสำเร็จหรือล้มเหลว—ความเสมอนี้เรียกว่า ‘โยคะ’",
+    "author": "Vyāsa (Bhagavad Gita)",
+    "year": "c. 2nd cent. BCE (trad.)",
+    "work": "Bhagavad Gita 2:48",
+    "info": "ท่าทีสมดุล: โฟกัสที่กระบวนการและคุณธรรมระหว่างทำ มากกว่าผลลัพธ์ที่ควบคุมไม่ได้.",
+    "ref": "https://vedabase.io/en/library/bg/2/48/"
+  },
+  {
+    "en": "If there is a remedy, what is the use of sorrow? If there is no remedy, what is the use of sorrow?",
+    "th": "หากมีทางแก้ จะเศร้าทำไม? หากไร้ทางแก้ เศร้าก็ไร้ผล—จะเศร้าทำไม?",
+    "author": "Śāntideva",
+    "year": "8th cent.",
+    "work": "Bodhicaryāvatāra 6:10",
+    "info": "ตรรกะลดกังวล: มีวิธีแก้ก็ลงมือ ไม่มีวิธีแก้ก็ฝึกยอมรับ—ทั้งสองทางไม่ต้องบวกทุกข์ซ้ำ.",
+    "ref": "https://bodhicharya.org/wp-content/uploads/2014/03/Shantideva-Chapter-VI-English.pdf"
+  },
+  {
+    "en": "God, grant me the serenity to accept the things I cannot change; courage to change the things I can; and wisdom to know the difference.",
+    "th": "ขอความสงบในการยอมรับสิ่งที่เปลี่ยนไม่ได้ ความกล้าเพื่อเปลี่ยนสิ่งที่ทำได้ และปัญญาเพื่อแยกแยะความต่าง",
+    "author": "Reinhold Niebuhr",
+    "year": "1932–1933",
+    "work": "The Serenity Prayer",
+    "info": "สูตร 3 ขั้นของใจนิ่งและกล้า—ยอมรับ/ลงมือ/รู้แยก—ถูกใช้กว้างขวางในงานบำบัดและกลุ่มฟื้นฟู.",
+    "ref": "https://www.yalealumnimagazine.com/articles/2143"
+  },
+  {
+    "en": "The curious paradox is that when I accept myself just as I am, then I can change.",
+    "th": "พาราด็อกซ์น่าสนใจ: เมื่อฉันยอมรับตัวเองอย่างที่เป็น—ตอนนั้นแหละฉันจึงเปลี่ยนได้",
+    "author": "Carl R. Rogers",
+    "year": "1961",
+    "work": "On Becoming a Person",
+    "info": "การยอมรับตน (self-acceptance) ลดแรงต้านภายใน—เปิดพื้นที่ให้การเปลี่ยนแปลงอย่างเมตตาและยั่งยืน.",
+    "ref": "https://www.goodreads.com/quotes/461-the-curious-paradox-is-that-when-i-accept-myself-just"
+  },
+  {
+    "en": "The best revenge is not to be like your enemy.",
+    "th": "การล้างแค้นที่ดีที่สุด คืออย่าเป็นเหมือนศัตรูของเรา",
+    "author": "Marcus Aurelius",
+    "year": "c. 170–180",
+    "work": "Meditations 6.6",
+    "info": "วางใจให้สูงกว่าพฤติกรรมแย่ ๆ ที่พบ—รักษามาตรฐานตนเอง คือเกราะคุ้มใจชั้นดี.",
+    "ref": "https://lexundria.com/m_aur_med/6.6/lg"
+  }
+],
+"ครอบครัว": [
+  {
+    "en": "Being filial and fraternal — is this not the root of humaneness?",
+    "th": "ความกตัญญูและเคารพพี่น้อง—มิใช่หรือคือรากของความเป็นคนดี",
+    "author": "Confucius",
+    "year": "5th cent. BCE",
+    "work": "Analects 1:2",
+    "info": "ขงจื่อวาง ‘บ้าน’ เป็นโรงเรียนคุณธรรม—รากของ ‘เหริน/เมตตา’ เริ่มจากกตัญญูและเคารพกันในครอบครัว.",
+    "ref": "https://www.acmuller.net/con-dao/analects.html#div-1"
+  },
+  {
+    "en": "The family is the association established by nature for the supply of men’s everyday wants.",
+    "th": "ครอบครัวคือสหภาพตามธรรมชาติ เพื่อตอบสนองความต้องการพื้นฐานของมนุษย์",
+    "author": "Aristotle",
+    "year": "4th cent. BCE",
+    "work": "Politics, Book I",
+    "info": "มองครอบครัวเป็นหน่วยฐานของสังคม—แหล่งเพาะเลี้ยงคุณธรรมและความช่วยเหลือซึ่งกันและกันก่อนระดับรัฐ.",
+    "ref": "http://classics.mit.edu/Aristotle/politics.1.one.html"
+  },
+  {
+    "en": "Treat your elders as elders in your own family, and extend it to the elders of others; treat the young as young in your own family, and extend it to the young of others.",
+    "th": "ดูแลผู้สูงวัยในบ้านให้สมเกียรติ แล้วขยายไปสู่ผู้สูงวัยของผู้อื่น; เอาใจใส่เด็กในบ้าน แล้วขยายไปสู่เด็กของผู้อื่น",
+    "author": "Mencius",
+    "year": "4th cent. BCE",
+    "work": "Mengzi 1A:7",
+    "info": "เริ่มทำความดีในบ้าน แล้วขยายวงสู่สังคม—จริยธรรมแบบครอบครัวเป็นฐานของคุณธรรมสาธารณะ.",
+    "ref": "https://ctext.org/mengzi/liang-hui-wang-i"
+  },
+  {
+    "en": "Filial piety is the root of all virtue, and the stem from which grows all moral teaching.",
+    "th": "ความกตัญญูคือรากแห่งคุณธรรมทั้งปวง—เป็นลำต้นที่หล่อเลี้ยงคำสอนทางศีลธรรมทั้งหมด",
+    "author": "Classic of Filial Piety",
+    "year": "trad. 4th–3rd cent. BCE",
+    "work": "Xiaojing, ch. 1 (Legge tr.)",
+    "info": "วางหลักว่า ‘ความดีงามทั้งหลาย’ งอกจากความสัมพันธ์พ่อแม่–ลูกที่ตั้งมั่น.",
+    "ref": "https://public-library.uk/ebooks/46/87.pdf"
+  },
+  {
+    "en": "The first society is in marriage; the next in children; then one household in common — this is the beginning of the city and, as it were, the seed-bed of the state.",
+    "th": "สังคมแรกเริ่มอยู่ที่คู่สมรส ถัดมาคือบุตร แล้วจึงเป็นเรือนเดียวร่วมกัน—นี่คือจุดตั้งต้นของนคร และเสมือนเรือนเพาะของรัฐ",
+    "author": "Cicero",
+    "year": "44 BCE",
+    "work": "De Officiis I.17 (sec. 54)",
+    "info": "ครอบครัวเป็น ‘เมล็ดพันธุ์’ ของรัฐ—ความมั่นคงสาธารณะเริ่มที่ความดีงามของบ้าน.",
+    "ref": "https://upload.wikimedia.org/wikipedia/commons/5/5d/De_Officiis.pdf"
+  },
+  {
+    "en": "Parents love their children as themselves (as a sort of other selves), while children love their parents as those from whom they are born.",
+    "th": "พ่อแม่รักบุตรเสมือนรักตนเอง (ดุจ ‘ตัวตนอีกคน’); ส่วนบุตรรักบิดามารดาด้วยตระหนักถึงผู้ให้กำเนิด",
+    "author": "Aristotle",
+    "year": "4th cent. BCE",
+    "work": "Nicomachean Ethics 8.12",
+    "info": "อธิบายธรรมชาติความรักในครอบครัว—ความผูกพันคนละแบบแต่เกื้อกูลกัน.",
+    "ref": "https://classics.mit.edu/Aristotle/nicomachaen.8.viii.html"
+  },
+  {
+    "en": "Honor your father and your mother.",
+    "th": "จงให้เกียรติบิดามารดาของเจ้า",
+    "author": "Hebrew Bible",
+    "year": "—",
+    "work": "Exodus 20:12",
+    "info": "บัญญัติพื้นฐานที่เชื่อม ‘การนับถือ’ เข้ากับ ‘ความเจริญงอกงามของชีวิต’.",
+    "ref": "https://www.biblegateway.com/passage/?search=Exodus+20%3A12&version=NIV"
+  },
+  {
+    "en": "In five ways should children minister to their parents as the East; and in five ways do parents show compassion to their children.",
+    "th": "บุตรพึงอุปการะบิดามารดาในห้าประการ; และบิดามารดาพึงอนุเคราะห์บุตรในห้าประการ",
+    "author": "Buddha (Pāli Canon)",
+    "year": "trad. 5th–3rd cent. BCE",
+    "work": "Sigalovada Sutta (DN 31)",
+    "info": "กรอบความรับผิดชอบสองทาง—กตัญญูของบุตรควบคู่เมตตาของพ่อแม่ จึงทำให้ ‘ทิศตะวันออก’ สงบมั่นคง.",
+    "ref": "https://www.accesstoinsight.org/tipitaka/dn/dn.31.0.nara.html"
+  },
+  {
+    "en": "Happy families are all alike; every unhappy family is unhappy in its own way.",
+    "th": "ครอบครัวที่สุข คล้ายคลึงกัน; ครอบครัวที่ทุกข์ แต่ละบ้านทุกข์ไปคนละแบบ",
+    "author": "Leo Tolstoy",
+    "year": "1877",
+    "work": "Anna Karenina, Part I, Ch. 1",
+    "info": "ประโยคเปิดตำนาน ครอบครัวที่ ‘สุข’ มักมีองค์ประกอบพื้นฐานครบถ้วน; แต่ความบกพร่องมีรูปแบบหลากหลาย.",
+    "ref": "https://www.gutenberg.org/files/1399/1399-h/1399-h.htm"
+  },
+  {
+    "en": "Ah! there is nothing like staying at home for real comfort.",
+    "th": "อ่า! ไม่มีที่ใดให้ความสบายใจจริงแท้ เท่าการได้อยู่บ้าน",
+    "author": "Jane Austen",
+    "year": "1815",
+    "work": "Emma (Vol. I, Ch. 15)",
+    "info": "เสียงของ ‘บ้าน’ ในฐานะที่พึ่งพิงทางใจ—ความอบอุ่นเรียบง่ายที่เยียวยาความเหนื่อยล้าของวัน.",
+    "ref": "https://giove.isti.cnr.it/demo/eread/Libri/joy/Emma.pdf"
+  }
+],
+"ทำงาน/แรงบันดาลใจ": [
+  {
+    "en": "The impediment to action advances action. What stands in the way becomes the way.",
+    "th": "อุปสรรคผลักการกระทำให้ก้าวหน้า—สิ่งขวางทาง กลายเป็นเส้นทาง",
+    "author": "Marcus Aurelius",
+    "year": "c. 170–180",
+    "work": "Meditations 5.20",
+    "info": "ท่าทีแบบแปลงปัญหาให้เป็นครู—กำหนดงานถัดไปจากสิ่งที่ขวางอยู่ ติดขัดตรงไหน ตรงนั้นคือบทเรียน.",
+    "ref": "https://archive.org/details/meditationsmarcusaurelius"
+  },
+  {
+    "en": "It is not that we have a short time to live, but that we waste much of it.",
+    "th": "ไม่ใช่ว่าเรามีเวลาชีวิตน้อย—แต่เรามักปล่อยให้มันสูญเปล่า",
+    "author": "Seneca",
+    "year": "c. 49",
+    "work": "On the Shortness of Life",
+    "info": "โฟกัสสิ่งสำคัญเป็นยาแก้ ‘ชีวิตสั้น’—ตัดสิ่งลวงตา รักษาเวลาสำหรับการกระทำที่มีความหมาย.",
+    "ref": "https://en.wikisource.org/wiki/Of_the_Shortness_of_Life"
+  },
+  {
+    "en": "Dost thou love life? Then do not squander time; for that’s the stuff life is made of.",
+    "th": "รักชีวิตหรือไม่? ถ้ารัก อย่าทิ้งเวลาทิ้ง—เพราะชีวิตทำจากเวลา",
+    "author": "Benjamin Franklin",
+    "year": "1758",
+    "work": "The Way to Wealth",
+    "info": "เวลาคือวัตถุดิบของทุกผลงาน—จัดเวลาช่วงทองของวันไว้ให้สิ่งที่สำคัญที่สุด.",
+    "ref": "https://founders.archives.gov/documents/Franklin/01-07-02-0001"
+  },
+
+  {
+    "en": "Far and away the best prize that life offers is the chance to work hard at work worth doing.",
+    "th": "รางวัลที่ดีที่สุดของชีวิต คือโอกาสได้ทุ่มเททำ ‘งานที่ควรค่า’",
+    "author": "Theodore Roosevelt",
+    "year": "1903",
+    "work": "Remarks at the State Fair, Syracuse, NY",
+    "info": "นิยาม ‘งานที่ควรค่า’ คือสิ่งทำให้ผู้พึ่งพาเรามีคุณภาพชีวิตดีขึ้น—ย้ำคุณค่าของการลงมือจริงมากกว่าคำพูด.",
+    "ref": "https://www.presidency.ucsb.edu/documents/remarks-the-state-fair-syracuse-new-york"
+  },
+  {
+    "en": "Work is love made visible.",
+    "th": "งานคือความรักที่มองเห็นได้",
+    "author": "Kahlil Gibran",
+    "year": "1923",
+    "work": "The Prophet — On Work",
+    "info": "เมื่อเราทำด้วยรัก ผลงานมีชีวิต—ถ้าทำด้วยฝืนใจ งานก็ป้อนความหมายให้เราได้เพียงครึ่งเดียว.",
+    "ref": "https://www.gutenberg.org/files/58585/58585-h/58585-h.htm"
+  },
+  {
+    "en": "Steady toil conquers all.",
+    "th": "ความเพียรพยายามพิชิตทุกสิ่ง (Latin: “Labor omnia vincit improbus.”)",
+    "author": "Virgil",
+    "year": "29 BCE",
+    "work": "Georgics 1.145–146",
+    "info": "วิริยะอุตสาหะ (improbus labor) คือคำอธิบายการพัฒนา—ทักษะและผลลัพธ์เกิดจากการลงแรงอย่างสม่ำเสมอ.",
+    "ref": "https://scaife.perseus.org/reader/urn:cts:latinLit:phi0690.phi002.perseus-lat2:1.145/"
+  },
+  {
+    "en": "Before excellence the immortal gods have set sweat; the path to her is long and steep.",
+    "th": "ก่อนถึงความเป็นเลิศ เหล่าเทพวาง ‘เหงื่อ’ ไว้ขวาง—ทางไปหานางคุณธรรมนั้นยาวและชัน",
+    "author": "Hesiod",
+    "year": "c. 700 BCE",
+    "work": "Works and Days (vv. ~287–292)",
+    "info": "คุณธรรม/ความเป็นเลิศ (aretē) ต้องแลกด้วยความพยายามจริง—ไม่มีลัดบนเนินชัน.",
+    "ref": "https://chs.harvard.edu/primary-source/hesiod-works-and-days-sb/"
+  },
+  {
+    "en": "The harder the conflict, the more glorious the triumph.",
+    "th": "ศึกยิ่งหนัก ชัยชนนะยิ่งงาม",
+    "author": "Thomas Paine",
+    "year": "1776",
+    "work": "The American Crisis, No. 1",
+    "info": "ของที่ได้มาง่าย เรามักตีค่าต่ำ—งานยากสร้างทั้งคุณค่าและความภูมิใจ.",
+    "ref": "https://www.digitalhistory.uh.edu/disp_textbook.cfm?psid=4123&smtID=3"
+  },
+  {
+    "en": "Work spares us from three great evils: boredom, vice, and want.",
+    "th": "งานช่วยเราจากสามภัยใหญ่: ความเบื่อ ความชั่ว และความขัดสน",
+    "author": "Voltaire",
+    "year": "1759",
+    "work": "Candide, ch. 30",
+    "info": "บทสรุปชีวิตแบบ ‘ปลูกสวนของเรา’—การลงมือทำให้จิตว่างเปล่ากลับมามีศักดิ์ศรีและพึ่งตนเองได้.",
+    "ref": "https://www.gutenberg.org/files/19942/19942-h/19942-h.htm"
+  },
+  {
+    "en": "Better three hours too soon than a minute too late.",
+    "th": "มาถึงก่อนสามชั่วโมงยังดีกว่าสายไปนาทีเดียว",
+    "author": "William Shakespeare",
+    "year": "c. 1597–1601",
+    "work": "The Merry Wives of Windsor, Act 2, Scene 2",
+    "info": "วินัยเรื่อง ‘ตรงเวลา’ คือความเคารพต่อผู้อื่นและต่อผลงาน—เตรียมให้พร้อมล่วงหน้าเสมอ.",
+    "ref": "https://shakespeare.mit.edu/merry_wives/merry_wives.2.2.html"
+  }
+],
+"ความหวัง": [
+  {
+    "en": "'Hope' is the thing with feathers — that perches in the soul…",
+    "th": "ความหวังคือนกน้อยที่เกาะอยู่ในวิญญาณ—ร้องไม่รู้จบ แม้พายุโหมกระหน่ำ",
+    "author": "Emily Dickinson",
+    "year": "c. 1861",
+    "work": "Poem 254",
+    "info": "ดิกคินสันให้ภาพ ‘ความหวัง’ แบบอ่อนโยนแต่ทนทาน—อยู่เงียบ ๆ คอยค้ำใจแม้ในพายุ.",
+    "ref": "https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314"
+  },
+  {
+    "en": "This too shall pass.",
+    "th": "เดี๋ยวนี้ก็จะผ่านไป",
+    "author": "Persian Proverb",
+    "year": "—",
+    "work": "Proverb (attributed, medieval Persian)",
+    "info": "สำนวนปลอบใจเก่าแก่—ตอกย้ำความจริงว่าทั้งสุขและทุกข์ล้วนชั่วคราว จึงควรรักษาสติเมื่อตกคลื่น.",
+    "ref": "https://en.wikipedia.org/wiki/This_too_shall_pass"
+  },
+  {
+    "en": "Everything can be taken from a man but one thing: the last of the human freedoms — to choose one’s attitude.",
+    "th": "ทุกสิ่งอาจถูกพรากไปได้ ยกเว้นสิ่งสุดท้าย—เสรีภาพในการเลือกท่าทีของเรา",
+    "author": "Viktor E. Frankl",
+    "year": "1946",
+    "work": "Man’s Search for Meaning",
+    "info": "ฟรังเคิลชี้ ‘เสรีภาพสุดท้าย’ ที่ไม่มีใครพรากได้—การกำหนดท่าทีตอบสนองต่อความทุกข์ และสร้างความหมายจากมัน.",
+    "ref": "https://archive.org/details/manssearchforme00fran"
+  },
+
+  {
+    "en": "Hope springs eternal in the human breast.",
+    "th": "ความหวังผุดพรายไม่รู้สิ้นในหัวใจมนุษย์",
+    "author": "Alexander Pope",
+    "year": "1733–1734",
+    "work": "An Essay on Man, Epistle I",
+    "info": "บทกวีเชิงปรัชญายุคเรืองปัญญา—เตือนว่า ‘ความไม่แน่นอนของอนาคต’ เป็นพื้นที่ให้มนุษย์ลงมือและหวังได้เสมอ.",
+    "ref": "https://www.poetryfoundation.org/poems/44899/an-essay-on-man-epistle-i"
+  },
+  {
+    "en": "All shall be well, and all shall be well, and all manner of thing shall be well.",
+    "th": "ทุกสิ่งจะดี ทั้งหมดจะดี—และทุกสิ่งทุกอย่างล้วนจะดี",
+    "author": "Julian of Norwich",
+    "year": "c. 1373 (Long Text compiled later)",
+    "work": "Revelations of Divine Love",
+    "info": "ถ้อยคำปลอบประโลมจากประสบการณ์นิมิตช่วงวิกฤตชีวิต—ความหวังแบบ ‘ไม่ปฏิเสธความเจ็บปวด’ แต่ยืนยันว่าจะไม่ถูกโค่น.",
+    "ref": "https://books.google.com/books?id=QvUODAAAQBAJ&pg=PA43"
+  },
+  {
+    "en": "History says, 'Don’t hope'… But then, once in a lifetime, the longed-for tidal wave of justice can rise up, and hope and history rhyme.",
+    "th": "ประวัติศาสตร์ว่า ‘อย่าหวัง’… แต่บางครา คลื่นยุติธรรมโถมขึ้น—จนความหวังกับประวัติศาสตร์สัมผัสจังหวะเดียวกัน",
+    "author": "Seamus Heaney",
+    "year": "1990",
+    "work": "The Cure at Troy",
+    "info": "ท่อนโคลงที่กลายเป็นวลีร่วมสมัย—ความหวังไม่ใช่การฝันลอย ๆ แต่คือจังหวะหายากที่การกระทำร่วมกันพลิกประวัติศาสตร์.",
+    "ref": "https://books.openedition.org/puc/614?lang=en"
+  },
+  {
+    "en": "We must accept finite disappointment, but never lose infinite hope.",
+    "th": "เราต้องยอมรับความผิดหวังซึ่งมีขอบเขต—but อย่าสูญเสียความหวังอันไม่สิ้นสุด",
+    "author": "Martin Luther King Jr.",
+    "year": "1963",
+    "work": "Draft chapter “Shattered Dreams” (toward Strength to Love)",
+    "info": "กรอบคิดเพื่อยืนหยัดต่อสู้แบบอหิงสา—ผิดหวังเป็นรายทาง แต่ความหวังคือพลังยืนยาวของขบวนการ.",
+    "ref": "https://kinginstitute.stanford.edu/king-papers/documents/draft-chapter-x-shattered-dreams"
+  },
+  {
+    "en": "‘For I know the plans I have for you,’ … ‘plans to give you hope and a future.’",
+    "th": "“เรารู้แผนงานเพื่อเจ้า… เพื่อให้ความหวังและอนาคตแก่เจ้า”",
+    "author": "Jeremiah (Hebrew Bible)",
+    "year": "c. 6th cent. BCE",
+    "work": "Jeremiah 29:11",
+    "info": "ถ้อยคำถึงชุมชนที่พลัดถิ่น—ความหวังในเชิงปฏิบัติ: สร้างบ้าน ทำงาน อธิษฐาน และรอเวลาอย่างมีความหมาย.",
+    "ref": "https://www.biblegateway.com/passage/?search=Jeremiah+29%3A11&version=NIV"
+  },
+  {
+    "en": "Hope is a good breakfast, but it is a bad supper.",
+    "th": "ความหวังเหมาะเป็นมื้อเช้า—แต่เป็นมื้อเย็นที่ไม่ดี",
+    "author": "Francis Bacon",
+    "year": "1625",
+    "work": "Essays, ‘Of Delays’",
+    "info": "บค.น.เตือนว่า ‘หวัง’ ดีเมื่อเริ่มวันเพื่อลงมือ—แต่ปลายวันควรมี ‘ผลลัพธ์’ แทนการคาดหวังลอย ๆ.",
+    "ref": "https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed5-00004602"
+  },
+  {
+    "en": "While there is life, there is hope.",
+    "th": "ตราบใดยังมีลมหายใจ ก็ยังมีความหวัง",
+    "author": "Cicero",
+    "year": "49 BCE",
+    "work": "Ad Atticum 9.10.3",
+    "info": "วลีคลาสสิกจากจดหมายถึงแอตติคัส—กรอบคิดเรียบง่ายแต่ทรงพลังสำหรับช่วงตกต่ำ: ยังหายใจ = ยังเลือกการกระทำต่อไปได้.",
+    "ref": "https://wist.info/cicero-marcus-tullius/43039/"
+  },
+  {
+    "en": "Hope locates itself in the premise that we don’t know what will happen, and that in the spaciousness of uncertainty is room to act.",
+    "th": "ความหวังตั้งอยู่บนข้อเท็จจริงว่า ‘เราไม่รู้อนาคต’—และช่องว่างแห่งความไม่แน่นอนนี่แหละคือพื้นที่ให้ลงมือ",
+    "author": "Rebecca Solnit",
+    "year": "2004 (rev. 2016)",
+    "work": "Hope in the Dark",
+    "info": "นิยามความหวังแบบลงมือ—ไม่ใช่ความสบายใจ แต่เป็นพลังผลักให้ทำสิ่งที่อาจเปลี่ยนฉากถัดไปของโลก.",
+    "ref": "https://www.theguardian.com/books/2016/mar/07/rebecca-solnit-hope-in-the-dark-protest-trump-activism"
+  }
+],
   "การเงิน": [
     {
       "en": "Beware of little expenses; a small leak will sink a great ship.",
@@ -387,7 +921,7 @@
       "author": "Benjamin Franklin",
       "year": "1758",
       "work": "The Way to Wealth",
-      "info": "เตือนโครงสร้างค่าใช้จ่ายจิ๋วแต่บ่อย—สะสมจนกลายเป็น ‘รูรั่ว’ งบประมาณ วิธีรับมือคือบันทึกและอัตโนมัติการออม.",
+      "info": "เตือนโครงสร้างค่าใช้จ่ายจิ๋วแต่บ่อย—สะสมจนกลายเป็น ‘รูรั่ว’ งบประมาณ วิธีรับมือคือบันทึกและอัตโนมัติการออม",
       "ref": "https://founders.archives.gov/documents/Franklin/01-07-02-0001"
     },
     {
@@ -396,7 +930,7 @@
       "author": "Warren E. Buffett",
       "year": "2008",
       "work": "Berkshire Hathaway Shareholder Letter",
-      "info": "หลักการลงทุนเชิงคุณค่า—อย่าสับสน ‘ราคาตลาด’ กับ ‘คุณค่าพื้นฐาน’ ของกิจการ โดยเฉพาะยามผันผวน.",
+      "info": "หลักการลงทุนเชิงคุณค่า—อย่าสับสน ‘ราคาตลาด’ กับ ‘คุณค่าพื้นฐาน’ ของกิจการ โดยเฉพาะยามผันผวน",
       "ref": "https://www.berkshirehathaway.com/letters/2008ltr.pdf"
     },
     {
@@ -405,8 +939,73 @@
       "author": "John C. Bogle",
       "year": "2007",
       "work": "The Little Book of Common Sense Investing",
-      "info": "แนวคิดกองทุนดัชนี ‘ทั้งตลาด’—กระจายกว้าง ค่าธรรมเนียมต่ำ เอาชนะมนตร์ ‘เลือกหุ้นให้ถูกทุกครั้ง’ ที่ทำได้ยากยิ่ง.",
+      "info": "แนวคิดกองทุนดัชนี ‘ทั้งตลาด’—กระจายกว้าง ค่าธรรมเนียมต่ำ ลดความเสี่ยงจากการเลือกหุ้นรายตัว",
       "ref": "https://www.bogleheads.org/wiki/The_Little_Book_of_Common_Sense_Investing"
+    },
+
+    {
+      "en": "Consumption is the sole end and purpose of all production.",
+      "th": "การบริโภคคือจุดหมายและจุดประสงค์เดียวของการผลิตทั้งหมด",
+      "author": "Adam Smith",
+      "year": "1776",
+      "work": "The Wealth of Nations, Book IV, ch. 8",
+      "info": "สมิธย้ำว่าผลประโยชน์ของผู้บริโภคต้องมาก่อน—นโยบายเศรษฐกิจจึงไม่ควรเอื้อผู้ผลิตจนผู้บริโภคเสียประโยชน์",
+      "ref": "https://oll.libertyfund.org/quotes/adam-smith-consumption-only-purpose-production"
+    },
+    {
+      "en": "In the long run we are all dead.",
+      "th": "ในระยะยาวเราต่างก็ล้มตายกันทั้งนั้น",
+      "author": "John Maynard Keynes",
+      "year": "1923",
+      "work": "A Tract on Monetary Reform, ch. 3",
+      "info": "ชี้ว่าการแก้ปัญหาเศรษฐกิจต้องมองผลลัพธ์ระยะสั้นที่ผู้คนเผชิญจริง ๆ ไม่ใช่พึ่ง ‘ระยะยาว’ อย่างเดียว",
+      "ref": "https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100054245"
+    },
+    {
+      "en": "Inflation is always and everywhere a monetary phenomenon.",
+      "th": "เงินเฟ้อคือปรากฏการณ์ด้านปริมาณเงิน เสมอและทุกแห่ง",
+      "author": "Milton Friedman",
+      "year": "1970",
+      "work": "The Counter-Revolution in Monetary Theory",
+      "info": "ฟรีดแมนย้ำบทบาทนโยบายการเงิน—การขยายตัวของเงินเกินศักยภาพจริงของเศรษฐกิจคือรากของเงินเฟ้อ",
+      "ref": "https://www.hoover.org/sites/default/files/uploads/documents/0817928920_3.pdf"
+    },
+    {
+      "en": "In the short run the market is a voting machine, but in the long run it is a weighing machine.",
+      "th": "ระยะสั้นตลาดคือเครื่องลงคะแนนเสียง แต่ระยะยาวตลาดคือเครื่องชั่งน้ำหนัก",
+      "author": "Benjamin Graham",
+      "year": "1949",
+      "work": "The Intelligent Investor (ch. 1)",
+      "info": "ราคาสั้น ๆ ขึ้นกับความนิยม (โหวต) แต่คุณค่าแท้จะถูก ‘ชั่ง’ ออกมาในระยะยาว—ใจเย็นและยึดพื้นฐาน",
+      "ref": "https://quoteinvestigator.com/2014/02/27/voting/"
+    },
+    {
+      "en": "Time is your friend; impulse is your enemy.",
+      "th": "เวลาเป็นมิตรของคุณ; ความหุนหันพลันแล่นคือศัตรู",
+      "author": "John C. Bogle",
+      "year": "1999",
+      "work": "Common Sense on Mutual Funds (Ten Simple Rules)",
+      "info": "ผลตอบแทนทบต้นต้องการเวลาและวินัย—หลีกเลี่ยงการซื้อขายตามอารมณ์เพื่อรักษาผลระยะยาว",
+      "ref": "https://www.johncbogle.com/old/Books/CommSenC09.pdf"
+    },
+    {
+      "en": "An investment in knowledge pays the best interest.",
+      "th": "การลงทุนในความรู้ ให้ดอกเบี้ยดีที่สุด",
+      "author": "Benjamin Franklin",
+      "year": "1758",
+      "work": "The Way to Wealth",
+      "info": "แฟรงคลินยก ‘ความรู้’ เป็นสินทรัพย์ที่ไม่มีใครพรากได้—ยิ่งเรียนยิ่งงอกผลต่อรายได้และการตัดสินใจทางการเงิน",
+      "ref": "https://minio.la.utexas.edu/webeditor-files/coretexts/pdf/175820franklin20wealth.pdf"
+    },
+    {
+      "en": "Be fearful when others are greedy, and be greedy when others are fearful.",
+      "th": "จงกลัวเมื่อคนอื่นโลภ และจงโลภเมื่อคนอื่นกลัว",
+      "author": "Warren E. Buffett",
+      "year": "1986",
+      "work": "Berkshire Hathaway Shareholder Letter",
+      "info": "หลัก ‘สวนฝูงชน’ ของบัฟเฟตต์—ให้ราคาดีเกิดเมื่ออารมณ์ตลาดสุดโต่ง จึงควรมีวินัยและกรอบมูลค่ารองรับ",
+      "ref": "https://www.berkshirehathaway.com/letters/1986.html"
     }
   ]
 }
+
